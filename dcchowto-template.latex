@@ -1,0 +1,88 @@
+%%
+%% This is file `dcchowto-template.latex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% dcchowto.dtx  (with options: `template')
+%% ----------------------------------------------------------------
+%% dcchowto --- A LaTeX class for DCC How-to Guides
+%% Author:  Alex Ball
+%% E-mail:  a.ball@ukoln.ac.uk
+%% License: Released under the LaTeX Project Public License v1.3c or later
+%% See:     http://www.latex-project.org/lppl.txt
+%% ----------------------------------------------------------------
+%% 
+\documentclass[twocolumn,numbers]{dcchowto}
+$if(biblio-files)$
+\bibliography{$biblio-files$}
+$endif$
+\renewcommand*{\bibfont}{\small}
+\ifdraftdoc
+\usepackage{embedfile}
+\embedfile[desc={Source code for this document}]{\jobname.tex}
+$if(biblio-files)$
+\embedfile[desc={Biblatex database for this document}]{$biblio-files$}
+$endif$
+\fi
+
+$if(title)$
+\title{$title$}
+$endif$
+$for(author)$
+\author{$author$}
+$endfor$
+\date{$date$}
+$for(partner)$
+\partner{$partner$}
+$endfor$
+$for(partnerlogo)$
+\partnerlogo{$partnerlogo$}
+$endfor$
+
+\usepackage{environ}
+
+\let\oldquote=\quote
+\let\endoldquote=\endquote
+\let\quote\relax
+\let\endquote\relax
+
+\NewEnviron{quote}{%
+  \global\let\tmp\BODY\aftergroup\docoverandabstract
+}
+
+\def\docoverandabstract{%
+  \let\quote=\oldquote
+  \let\endquote=\endoldquote
+  \maketitle[\tmp]%
+}
+
+\begin{document}
+$for(include-before)$
+$include-before$
+$endfor$
+$body$
+$if(furtherinfo)$
+$for(furtherinfo)$
+\nocite{$furtherinfo$}
+$endfor$
+\printbibliography[category=notcited]
+$endif$
+
+\textbf{Please cite as:} \DCCHowtoAuthorAPA\ (\the\year). ‘\thetitle’. \emph{DCC How-to Guides}. Edinburgh: Digital Curation Centre. Available online: \url{http://www.dcc.ac.uk/resources/how-guides}
+
+\vfill
+\noindent\bfseries\begingroup\color{dccblue}
+Follow the DCC on Twitter: \href{http://twitter.com/#!/digitalcuration}{@digitalcuration}, \href{https://twitter.com/hashtag/ukdcc}{\#ukdcc}
+
+\vfill
+\raggedleft\mdseries\footnotesize Revised: \ifx\undefined\thedate\today\else\thedate\fi\par
+\endgroup
+$for(include-after)$
+$include-after$
+$endfor$
+\end{document}
+%% 
+%% Copyright (C) 2014 by Alex Ball <a.ball@ukoln.ac.uk>
+%%
+%% End of file `dcchowto-template.latex'.
