@@ -1,7 +1,7 @@
 NAME  = how-to-cite-datasets
 BIB   = cite-datasets
 SHELL = bash
-all: $(NAME).pdf $(NAME).html clean
+all: pdf html clean
 	exit 0
 tmp: $(NAME).md
 	cp $(NAME).md $(NAME)-tmp.md
@@ -9,9 +9,9 @@ tmp: $(NAME).md
 	perl -0777 -p -i -e 's@\\bgroup\\boxout@<div class="div_highlight" style="border-radius:8px;">@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\endboxout\\egroup@</div>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\(end)?fillboxout@@ig' $(NAME)-tmp.md
-$(NAME).pdf: tmp $(BIB).bib dcchowto-apa.csl
+pdf: tmp $(BIB).bib dcchowto-apa.csl
 	pandoc -s -S --latex-engine=lualatex --biblio $(BIB).bib --csl dcchowto-apa.csl -N -V fontsize=11pt -V papersize=a4paper -V lang=british -V geometry:hmargin=3cm -V geometry:vmargin=2.5cm -V mainfont=Charis\ SIL -V monofont=DejaVu\ Sans\ Mono -V header-includes="\usepackage{footmisc}\usepackage[svgnames]{xcolor}\colorlet{dccblue}{Blue}\let\nonzeroparskip\relax\let\fullcite\textbf" $(NAME)-tmp.md -o $(NAME)-preview.pdf
-$(NAME).html: tmp $(BIB).bib dcchowto-apa.csl
+html: tmp $(BIB).bib dcchowto-apa.csl dcchowto-template.html
 	perl -0777 -p -i -e 's@\\bgroup\\figure(?:\[[^\]]+\])?(.*?)\\caption\[([^\]]+)\]\{[^}]+\}\n\\label\{[^}]+\}\n\n\\endfigure\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\bgroup\\figure(?:\[[^\]]+\])?(.*?)\\caption\{([^}]+)\}\n\\label\{[^}]+\}\n\n\\endfigure\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\input\{([^}]+)\}@open+F,"$$1.html";join"",<F>@ige' $(NAME)-tmp.md
@@ -30,7 +30,7 @@ $(NAME).html: tmp $(BIB).bib dcchowto-apa.csl
 	perl -0777 -p -i -e 's@<div class="div_highlight" style="border-radius:8px;">\n<h1><a href="([^"]+)">([^<]+)</a></h1>@<div class="div_highlight" style="border-radius:8px;">\n<h2 id="\1">\2</h2>@ig' $(NAME).html
 	perl -0777 -p -i -e 's@<h1><a href="#sec:refs">References</a></h1>@<h2 id="#sec:refs">References</h2>@ig' $(NAME).html
 	perl -0777 -p -i -e 's@<sup>(\d+)</sup>@<sup>[\1]</sup>@ig' $(NAME).html
-dtp: $(NAME).pdf $(NAME).md $(BIB).bib dcchowto-template.latex
+dtp: $(NAME).md $(BIB).bib dcchowto-template.latex
 	pandoc -s -S --biblatex -V biblio-files=$(BIB).bib --template=dcchowto-template $(NAME).md -t latex -o $(NAME).tex
 	# The next 4 lines are peculiar to this document
 	perl -0777 -p -i -e 's@\\autocite\{altman\.king2007pss\}@\\footnote{\\fullcite{altman.king2007pss}\\label{fn:altman.king}}@ig' $(NAME).tex
