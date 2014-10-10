@@ -4,7 +4,7 @@ author:
 - 'Alex Ball (DCC)'
 - 'Monica Duke (DCC)'
 date: \today
-...
+---
 
 > This guide will help you create links between your academic publications
 > and the underlying datasets, so that anyone viewing the publication will
