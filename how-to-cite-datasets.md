@@ -35,7 +35,7 @@ systems put in place around it: mechanisms allowing authors to be open
 about their research while still receiving due credit; metrics used to
 translate such attributions into rewards for authors and their
 institutions; and archives ensuring that the work is permanently
-available for reference and reuse [@mackenzieowen2007sai ch. 2]. If
+available for reference and reuse [@mackenzieowen2007sai, ch. 2]. If
 datasets are to be regarded as first-class records of research, as they
 need to be, a similar set of control systems needs to be constructed
 around them.
