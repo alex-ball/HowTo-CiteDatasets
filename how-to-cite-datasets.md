@@ -69,7 +69,7 @@ Requirements for data citations {#sec:requirements}
 The SageCite Project has identified a set of requirements for dataset
 citations and any services set up to support them.[@duke2011rdc]
 
-\bgroup\boxout
+\bgroup\framed
 
   * The citation itself must be able to identify uniquely the object cited,
     though different citations might use different methods or schemes to do
@@ -88,7 +88,7 @@ citations and any services set up to support them.[@duke2011rdc]
     the academic reward system, and services that can generate complete
     citations.
 
-\endboxout\egroup
+\endframed\egroup
 
 Elements of a data citation {#sec:elements}
 ===========================
@@ -171,7 +171,7 @@ from commonly used style manuals,[@apa2010pma, p. 211][@ucp2010cms, p. 764][@gib
 while [Figure 2](#fig:repo-cites) shows the citation formats suggested
 by three data repositories.
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 
 APA
 
@@ -201,14 +201,14 @@ Oxford
     Barton-upon-Humber* \[data-set\]. York: Archaeology Data Service \[distributor\]
     `<`DOI [10.5284/1000389](http://dx.doi.org/10.5284/1000389)`>`.
 
-\endfillboxout
+\endshaded
 
 \caption[Data citations in common styles]{Data citations in common styles}
 \label{fig:common}
 
 \endfigure\egroup
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 
 PANGAEA
 
@@ -230,7 +230,7 @@ Dataverse
     `UNF:3:9JU+SmVyHgwRhAKclQ85Cg==`
     IQSS Dataverse Network \[Distributor\] V3 \[Version\].
 
-\endfillboxout
+\endshaded
 
 \caption{Data citation formats suggested by repositories}
 \label{fig:repo-cites}
@@ -255,10 +255,10 @@ themselves have the standard Handle structure of prefix, slash, suffix
 prefix may be further subdivided with dots, but otherwise the characters
 in a DOI have no special significance.
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 \input{fig-doi}
 
-\endfillboxout
+\endshaded
 \caption{Anatomy of a DOI}
 \label{fig:doi}
 
@@ -309,7 +309,7 @@ certain conventions are already becoming established.
     DOI points should also remain unchanged, with any new version
     receiving a new DOI.
 
-\bgroup\boxout
+\bgroup\framed
 \noindent{}**Example**
 
 \smallskip
@@ -331,7 +331,7 @@ Bionetworks to demonstrate both capturing workflows using Taverna, and
 making them citable resources using DataCite DOIs.^[SageCite Project
 blog, URL: <http://blogs.ukoln.ac.uk/sagecite/>]
 
-\endboxout\egroup
+\endframed\egroup
 
 Current issues and challenges {#sec:issues}
 =============================
@@ -439,12 +439,12 @@ than written out for human inspection. Nevertheless, the ORCID
 Initiative envisages ORCID IDs being included in parentheses after
 author names in textual citations, as in [Figure 4](#fig:orcid).
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 \noindent{}Chaturvedi, V. (AAA-1019-2010). (2004). Editorial.
 *Mycopathologia, 157,* iii–iv. Retrieved from
 <http://dx.doi.org/10.1023/B:MYCO.0000020677.89178.15>
 
-\endfillboxout
+\endshaded
 \caption{Example citation using an ORCID ID}
 \label{fig:orcid}
 
@@ -476,7 +476,7 @@ training. Bibliographies also tend to be better indexed and more freely
 available than the main texts of papers, and would therefore afford the
 citation greater visibility.
 
-\bgroup\boxout
+\bgroup\framed
 
 Summary for researchers {#sec:summary-researchers}
 =======================
@@ -510,7 +510,7 @@ version you used.
 that holds the dataset, so it can add a link from that dataset to your
 paper.
 
-\endboxout\egroup
+\endframed\egroup
 
 The remainder of this guide is aimed at those responsible for the
 supporting infrastructure, rather than researchers.
@@ -575,7 +575,7 @@ usage beyond e-print repositories to STFC’s ICAT data catalogue, open
 electronic notebooks and scientific publishers.^[Webtracks Project Web page, URL:
 <http://www.stfc.ac.uk/e-Science/projects/medium-term/metadata/webtracks/22422.aspx>.]
 
-\bgroup\boxout
+\bgroup\framed
 \noindent{}**Example**
 
 \smallskip\noindent
@@ -590,7 +590,7 @@ the metadata lookup API from the CrossRef registration agency) or a
 PubMed identifier,[@lord.etal2011okb] though this has not yet been extended
 to work with DataCite DOIs.
 
-\endboxout\egroup
+\endframed\egroup
 
 Nanopublications {#sec:nanopublications}
 ----------------
@@ -794,19 +794,19 @@ This can be done using either RDFa as in [Figure 5](#fig:rdfa)
 [@adida.birbeck2008rp], or HTML5 microdata as in [Figure 6](#fig:html5)
 [@w3c2011hm].
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 \input{fig-rdfa}
 
-\endfillboxout
+\endshaded
 \caption{Example of using RDFa to embed a link to a publication within a dataset's Web page}
 \label{fig:rdfa}
 
 \endfigure\egroup
 
-\bgroup\figure[ht]\fillboxout\small
+\bgroup\figure[ht]\shaded\small
 \input{fig-html5}
 
-\endfillboxout
+\endshaded
 \caption{Example of using HTML5 microdata to embed a link to a publication within a dataset's Web page}
 \label{fig:html5}
 
@@ -828,7 +828,7 @@ the data files or instructions on how to access them, licence terms –
 they are still experimenting with the information they provide to
 software tools.
 
-\bgroup\boxout
+\bgroup\framed
 \noindent{}**Example**
 
 \smallskip
@@ -847,7 +847,7 @@ It also explored, with *Acta Cryst E*, the possibility of
 embedding data directly within the Web pages of journal papers, using
 RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011shc].
 
-\endboxout\egroup
+\endframed\egroup
 
 Versioning {#sec:versions}
 ----------
@@ -897,7 +897,7 @@ users as citable resources. It does not affect how a repository might
 store the data, so long as it can guarantee that the same identifier
 always returns the same data.
 
-\bgroup\boxout
+\bgroup\framed
 
 Summary for data repositories {#sec:summary-repositories}
 =============================
@@ -933,7 +933,7 @@ For more information about registering Archival Resource Keys,^[Archival
 Resource Keys Website, URL: <https://confluence.ucop.edu/display/Curation/ARK>]
 contact the California Digital Library.
 
-\endboxout\egroup
+\endframed\egroup
 
 Acknowledgements {#sec:acknowledgements}
 ================
@@ -975,4 +975,3 @@ The following may also be of interest:
 -   \fullcite{wilkinson2011syw}[@wilkinson2011syw]
 
 -   \fullcite{wilkinson2011wdw}[@wilkinson2011wdw]
-

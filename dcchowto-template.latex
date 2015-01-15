@@ -13,18 +13,24 @@
 %% See:     http://www.latex-project.org/lppl.txt
 %% ----------------------------------------------------------------
 %% 
-\documentclass[twocolumn,numbers]{dcchowto}
+\documentclass[numbers,$for(classoption)$$classoption$$sep$,$endfor$]{dcchowto}
 $if(biblio-files)$
 \bibliography{$biblio-files$}
 $endif$
 \renewcommand*{\bibfont}{\small}
 \ifdraftdoc
-\usepackage{embedfile}
-\embedfile[desc={Source code for this document}]{\jobname.tex}
-$if(biblio-files)$
-\embedfile[desc={Biblatex database for this document}]{$biblio-files$}
-$endif$
+  \usepackage{embedfile}
+  \embedfile[desc={Source code for this document}]{\jobname.tex}
+  $if(biblio-files)$
+  \embedfile[desc={Biblatex database for this document}]{$biblio-files$}
+  $endif$
 \fi
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+$for(header-includes)$
+$header-includes$
+$endfor$
 
 $if(title)$
 \title{$title$}
@@ -76,13 +82,13 @@ $endif$
 Follow the DCC on Twitter: \href{http://twitter.com/#!/digitalcuration}{@digitalcuration}, \href{https://twitter.com/hashtag/ukdcc}{\#ukdcc}
 
 \vfill
-\raggedleft\mdseries\footnotesize Revised: \ifx\undefined\thedate\today\else\thedate\fi\par
+\raggedleft\mdseries\footnotesize\theversion\par
 \endgroup
 $for(include-after)$
 $include-after$
 $endfor$
 \end{document}
 %% 
-%% Copyright (C) 2014 by Alex Ball <a.ball@ukoln.ac.uk>
+%% Copyright (C) 2015 by Alex Ball <a.ball@ukoln.ac.uk>
 %%
 %% End of file `dcchowto-template.latex'.

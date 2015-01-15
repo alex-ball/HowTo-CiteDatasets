@@ -10,7 +10,7 @@ tmp: $(NAME).md
 	perl -0777 -p -i -e 's@\\endboxout\\egroup@</div>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\(end)?fillboxout@@ig' $(NAME)-tmp.md
 pdf: tmp $(BIB).bib dcchowto-apa.csl
-	pandoc -s -S --latex-engine=lualatex --biblio $(BIB).bib --csl dcchowto-apa.csl -N -V fontsize=11pt -V papersize=a4paper -V lang=british -V geometry:hmargin=3cm -V geometry:vmargin=2.5cm -V mainfont=Charis\ SIL -V monofont=DejaVu\ Sans\ Mono -V header-includes="\usepackage{footmisc}\usepackage[svgnames]{xcolor}\colorlet{dccblue}{Blue}\let\nonzeroparskip\relax\let\fullcite\textbf" $(NAME)-tmp.md -o $(NAME)-preview.pdf
+	pandoc -s -S --latex-engine=lualatex --biblio $(BIB).bib --csl dcchowto-apa.csl -N -V fontsize=11pt -V papersize=a4paper -V lang=british -V geometry:hmargin=3cm -V geometry:vmargin=2.5cm -V mainfont=Charis\ SIL -V monofont=DejaVu\ Sans\ Mono -V documentclass=memoir -V classoption="article,oneside" -V header-includes="\usepackage[svgnames]{xcolor}\colorlet{dccblue}{Blue}\colorlet{dccmaroon}{Crimson}\colorlet{dccpeach}{AntiqueWhite}\colorlet{shadecolor}{AntiqueWhite}\let\fullcite=\textbf" $(NAME)-tmp.md -o $(NAME)-preview.pdf
 html: tmp $(BIB).bib dcchowto-apa.csl dcchowto-template.html
 	perl -0777 -p -i -e 's@\\bgroup\\figure(?:\[[^\]]+\])?(.*?)\\caption\[([^\]]+)\]\{[^}]+\}\n\\label\{[^}]+\}\n\n\\endfigure\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\bgroup\\figure(?:\[[^\]]+\])?(.*?)\\caption\{([^}]+)\}\n\\label\{[^}]+\}\n\n\\endfigure\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
