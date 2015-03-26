@@ -291,7 +291,7 @@ via their data repository, rather than directly through DataCite. Any
 password from DataCite to gain access to the registration service.
 Alternatively, the organisation can manage its DOIs through a
 third-party service such as EZID.^[EZID Website, URL:
-<http://www.cdlib.org/services/uc3/ezid/>.] The username and password are not
+<http://ezid.cdlib.org/>.] The username and password are not
 needed for the metadata search or OAI-PMH services.
 
 While best practice has yet to emerge on some matters, (see ‘[Current
