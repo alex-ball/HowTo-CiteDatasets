@@ -200,7 +200,7 @@ example, see [Figure 3](#fig:doi) below).
 Note that the way in which these elements would be styled and combined
 together in the finished citation depends on the style in use for
 citations of textual publications. [Figure 1](#fig:common) provides example data citations drawn
-from commonly used style manuals,[@apa2010pma, p. 211][@ucp2010cms, p. 764][@gibaldi2008msm, pp. 213-214, 238-239][@ritter2002oms, p. 551]
+from commonly used style manuals,[@apa2010pma, p. 211][@ucp2010cms, p. 764][@gibaldi2008msm, pp. 213-214, 238-239][@ritter2002oms, p. 551][@waddingham2014nhr, pp. 368-376]
 while [Figure 2](#fig:repo-cites) shows the citation formats suggested
 by three data repositories.
 
@@ -230,9 +230,9 @@ MLA
 
 Oxford
 
-  : Cool, H. E. M. & Bell, M. (2011) *Excavations at St Peter's Church,
-    Barton-upon-Humber* \[data-set\]. York: Archaeology Data Service \[distributor\]
-    `<`DOI [10.5284/1000389](http://dx.doi.org/10.5284/1000389)`>`.
+  : Cool, H. E. M. and Bell, M. (2011), *Excavations at St Peter's Church,
+    Barton-upon-Humber* \[data-set\] (York: Archaeology Data Service),
+    doi: [10.5284/1000389](http://dx.doi.org/10.5284/1000389)
 
 \endshaded
 
