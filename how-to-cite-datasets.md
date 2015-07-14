@@ -277,7 +277,7 @@ Digital Object Identifiers {#sec:dois}
 There are several types of persistent identifier that could be used to
 identify datasets: examples include Handles, Archival Resource Keys
 (ARKs) and Persistent URLs (PURLs), all of which can be resolved to an
-Internet location. Arguably the scheme that is gaining most traction is
+Internet location. The scheme that is gaining most traction is
 the Digital Object Identifier (DOI).
 
 The DOI System is an identifier scheme administered by the International
@@ -347,23 +347,20 @@ certain conventions are already becoming established.
 \noindent{}**Example**
 
 \smallskip
-\noindent{}Sage Bionetworks is a non-profit biomedical research organisation
-which is creating the Sage Commons,^[Sage Bionetworks Commons Web page, URL:
-<http://sagebase.org/commons/>] an infrastructure for
-community-based modelling of large multi-contributor datasets.[@derry.etal2011dpm] The
-Commons already features a repository of curated datasets;[@furia.sieberts2011sbd] a new
-computational platform and repository front-end called Synapse will be
-added towards the end of 2011.
+\noindent{}The Sage Commons is an infrastructure for managing large,
+multi-contributor datasets in the area of biomedical research, developed by Sage
+Bionetworks.[@derry.etal2011dpm] One component of this is Synapse, a platform
+for sharing data, code and analyses and linking them together into workflows,
+alongside provenance data and documentation.^[Synapse, URL:
+<https://www.synapse.org/>] Sharing workflows in this way helps other scientists
+to reproduce the research, thereby verifying the results. It also permits more
+efficient research by allowing scientists to build more easily on each others'
+work.
 
-In this area of research, methods, tools and workflows are just as
-important as data. Taverna workflows, for example, provide a means of
-recording and documenting each step of the modelling process so that it
-can be shared with the scientific community. Furthermore, the workflows
-may be executed by Taverna Workbench, allowing the results from the
-pipeline to be reproduced. The SageCite Project worked with Sage
-Bionetworks to demonstrate both capturing workflows using Taverna, and
-making them citable resources using DataCite DOIs.^[SageCite Project
-blog, URL: <http://blogs.ukoln.ac.uk/sagecite/>]
+Taking forward ideas pioneered in the SageCite project,^[SageCite Project blog,
+URL: <http://blogs.ukoln.ac.uk/sagecite/>] Synapse provides functionality to
+assign DOIs to any resources shared through the platform, including datasets and
+workflows, to enable easy citation.
 
 \endframed\egroup
 
