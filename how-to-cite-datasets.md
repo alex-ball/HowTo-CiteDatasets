@@ -129,7 +129,7 @@ Elements of a data citation {#sec:elements}
 The elements that would make up a complete citation are a matter of some
 debate. The following list is a superset taken from four different
 papers on the subject.
-\footref{fn:altman.king}[@lawrence.etal2008dp][@green2010wnp][@starr.gastl2011ims]
+\footref{fn:altman.king}[@lawrence.etal2011cap][@green2010wnp][@starr.gastl2011ims]
 
 Author
 
@@ -996,8 +996,6 @@ The following may also be of interest:
 -   \fullcite{ands2011dca}[@ands2011dca]
 
 -   \fullcite{lane2008dce}[@lane2008dce]
-
--   \fullcite{callaghan.etal2011cap}[@callaghan.etal2011cap]
 
 -   \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
 
