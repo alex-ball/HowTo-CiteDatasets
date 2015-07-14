@@ -343,7 +343,7 @@ certain conventions are already becoming established.
     DOI points should also remain unchanged, with any new version
     receiving a new DOI.
 
-\bgroup\framed
+\framed
 \noindent{}**Example**
 
 \smallskip
@@ -362,7 +362,7 @@ URL: <http://blogs.ukoln.ac.uk/sagecite/>] Synapse provides functionality to
 assign DOIs to any resources shared through the platform, including datasets and
 workflows, to enable easy citation.
 
-\endframed\egroup
+\endframed
 
 Current issues and challenges {#sec:issues}
 =============================
@@ -507,7 +507,7 @@ training. Bibliographies also tend to be better indexed and more freely
 available than the main texts of papers, and would therefore afford the
 citation greater visibility.
 
-\bgroup\framed
+\framed
 
 Summary for researchers {#sec:summary-researchers}
 =======================
@@ -541,7 +541,7 @@ version you used.
 that holds the dataset, so it can add a link from that dataset to your
 paper.
 
-\endframed\egroup
+\endframed
 
 The remainder of this guide is aimed at those responsible for the
 supporting infrastructure, rather than researchers.
@@ -606,7 +606,7 @@ usage beyond e-print repositories to STFC’s ICAT data catalogue, open
 electronic notebooks and scientific publishers.^[Webtracks Project Web page, URL:
 <http://www.stfc.ac.uk/e-Science/projects/medium-term/metadata/webtracks/22422.aspx>.]
 
-\bgroup\framed
+\framed
 \noindent{}**Example**
 
 \smallskip\noindent
@@ -621,7 +621,7 @@ the metadata lookup API from the CrossRef registration agency) or a
 PubMed identifier,[@lord.etal2011okb] though this has not yet been extended
 to work with DataCite DOIs.
 
-\endframed\egroup
+\endframed
 
 Nanopublications {#sec:nanopublications}
 ----------------
@@ -859,7 +859,7 @@ the data files or instructions on how to access them, licence terms –
 they are still experimenting with the information they provide to
 software tools.
 
-\bgroup\framed
+\framed
 \noindent{}**Example**
 
 \smallskip
@@ -878,7 +878,7 @@ It also explored, with *Acta Cryst E*, the possibility of
 embedding data directly within the Web pages of journal papers, using
 RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011shc].
 
-\endframed\egroup
+\endframed
 
 Versioning {#sec:versions}
 ----------
@@ -928,7 +928,7 @@ users as citable resources. It does not affect how a repository might
 store the data, so long as it can guarantee that the same identifier
 always returns the same data.
 
-\bgroup\framed
+\framed
 
 Summary for data repositories {#sec:summary-repositories}
 =============================
@@ -964,7 +964,7 @@ For more information about registering Archival Resource Keys,^[Archival
 Resource Keys Website, URL: <https://confluence.ucop.edu/display/Curation/ARK>]
 contact the California Digital Library.
 
-\endframed\egroup
+\endframed
 
 Acknowledgements {#sec:acknowledgements}
 ================
