@@ -189,9 +189,10 @@ Location
     service.\footref{fn:altman.king}\footref{fn:lawrence.etal}\footref{fn:green}\footref{fn:starr.gastl}
 
 The most important of these elements – the ones that should be present
-in any citation – are the author, the title and date, and the location.
+in any citation – are the author, the title and date, the location, and the publisher.
 These give due credit, allow the reader to judge the relevance of the
-data, and permit access the data, respectively. In theory, they should
+dataset, permit access to it, and give reassurances about its quality or
+persistence, respectively. In theory, they should
 between them uniquely identify the dataset; in practice, a formal
 identifier is often needed. The most efficient solution is to give a
 location that consists of a resolver service and an identifier (for an
