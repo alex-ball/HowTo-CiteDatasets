@@ -6,8 +6,8 @@ all: pdf html clean
 tmp: $(NAME).md
 	cp $(NAME).md $(NAME)-tmp.md
 	echo -e "\n# Notes {#sec:notes}\n\nBefore uploading to the DCC website, the order of the last three items should be reversed, i.e. 'Notes', then 'Further information', then 'Acknowledgements'.\n\n" >> $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\bgroup\\boxout@<div class="div_highlight" style="border-radius:8px;">@ig' $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\endboxout\\egroup@</div>@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\framed(?:\[[^\]]*\])?@<div class="div_highlight" style="border-radius:8px;">@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\endframed@</div>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\(end)?fillboxout@@ig' $(NAME)-tmp.md
 pdf: tmp $(BIB).bib dcchowto-apa.csl
 	pandoc -s -S --latex-engine=lualatex --biblio $(BIB).bib --csl dcchowto-apa.csl -N -V fontsize=11pt -V papersize=a4paper -V lang=british -V geometry:hmargin=3cm -V geometry:vmargin=2.5cm -V mainfont=Charis\ SIL -V monofont=DejaVu\ Sans\ Mono -V documentclass=memoir -V classoption="article,oneside" -V header-includes="\usepackage[svgnames]{xcolor}\colorlet{dccblue}{Blue}\colorlet{dccmaroon}{Crimson}\colorlet{dccpeach}{AntiqueWhite}\colorlet{shadecolor}{AntiqueWhite}\let\fullcite=\textbf" $(NAME)-tmp.md -o $(NAME)-preview.pdf

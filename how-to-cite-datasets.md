@@ -63,32 +63,65 @@ necessary step if the culture of the scientific and research community
 as a whole is to shift towards data sharing, increasing the rapidity and
 transparency with which science advances.
 
-Requirements for data citations {#sec:requirements}
-===============================
+Principles of data citation {#sec:requirements}
+===========================
 
-The SageCite Project has identified a set of requirements for dataset
-citations and any services set up to support them.[@duke2011rdc]
+FORCE11, an international community of individuals and organisations
+interested in improving the scholarly communication process,
+has published a set of data citation principles.[@fdcsg2014jdd]
+The principles build on earlier work in this area, most notably by
+CODATA,[@codata2013ooc]
+the (US) National Academies of Sciences, Engineering, and Medicine,[@uhlir2012fad]
+the Institute for Quantitative Social Science, Harvard University,[@altman.king2007pss]
+and the DCC.[@ball.duke2012dcl]
 
-\bgroup\framed
+\framed[breakable]
 
-  * The citation itself must be able to identify uniquely the object cited,
-    though different citations might use different methods or schemes to do
-    so.
+Importance
 
-  * It must be able to identify subsets of the data as well as the whole
-    dataset.
+  : Data should be considered legitimate, citable products of research.
+    Data citations should be accorded the same importance in the scholarly record as citations of other research objects,
+    such as publications.
 
-  * It must provide the reader with enough information to access the
-    dataset; indeed, when expressed digitally it should provide a mechanism
-    for accessing the dataset through the Web infrastructure.
+Credit and Attribution
 
-  * It must be usable not only by humans but also by software tools, so that
-    additional services may be built using these citations. In particular,
-    there need to be services that use the citations in metrics to support
-    the academic reward system, and services that can generate complete
-    citations.
+  : Data citations should facilitate giving scholarly credit and normative and legal attribution to all contributors to the data,
+    recognizing that a single style or mechanism of attribution may not be applicable to all data.
 
-\endframed\egroup
+Evidence
+
+  : In scholarly literature, whenever and wherever a claim relies upon data,
+    the corresponding data should be cited.
+
+Unique Identification
+
+  : A data citation should include a persistent method for identification that is machine actionable,
+    globally unique, and widely used by a community.
+
+Access
+
+  : Data citations should facilitate access to the data themselves
+    and to such associated metadata, documentation, code, and other materials,
+    as are necessary for both humans and machines to make informed use of the referenced data.
+
+Persistence
+
+  : Unique identifiers, and metadata describing the data, and its disposition,
+    should persist – even beyond the lifespan of the data they describe.
+
+Specificity and Verifiability
+
+  : Data citations should facilitate identification of, access to, and verification of the specific data that support a claim.
+    Citations or citation metadata should include information about provenance and fixity
+    sufficient to facilitate verfiying that the specific timeslice, version and/or granular portion of data retrieved subsequently
+    is the same as was originally cited.
+
+Interoperability and Flexibility
+
+  : Data citation methods should be sufficiently flexible to accommodate the variant practices among communities,
+    but should not differ so much that they compromise interoperability of data citation practices across communities.
+
+\endframed
 
 Elements of a data citation {#sec:elements}
 ===========================
@@ -96,7 +129,7 @@ Elements of a data citation {#sec:elements}
 The elements that would make up a complete citation are a matter of some
 debate. The following list is a superset taken from four different
 papers on the subject.
-[@altman.king2007pss][@lawrence.etal2008dp][@green2010wnp][@starr.gastl2011ims]
+\footref{fn:altman.king}[@lawrence.etal2008dp][@green2010wnp][@starr.gastl2011ims]
 
 Author
 
