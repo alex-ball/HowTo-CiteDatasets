@@ -131,6 +131,53 @@ It discusses the practical business of citing datasets,
 such as how to construct a data citation and use it in a research paper.
 
 
+## Ways of referencing data {#sec:place}
+
+The usual way of referencing the data directly underlying a publication is
+by means of a *data access statement*. For open data, this statement should say
+what is available from which repository, and provide a URL, identifier or
+accession code to help access the data. For restricted data, the statement
+should indicate the legal or ethical reason for the restriction, and provide a
+link to a permanent record explaining the conditions of access.
+
+While a simple statement of this sort fulfils the basic need to reference data,
+it falls short in several respects:
+
+  * if there is a typographical error in the identifier or URL, there is no
+    additional information to locate the data among the repository's holdings;
+  * authors may be tempted to give the URL of the repository, rather than one
+    specific to the dataset;
+  * it does not give due credit to the creators of the dataset – an especially
+    important point if these are different from the authors of the publication;
+  * it does not treat data as a first-class record of research.
+
+All of these issues may be resolved by enhancing the statement with a data citation.
+As with other citations, this involves providing an in-text pointer to an entry
+in the reference list.
+
+If the publisher is not willing to accept a data citation, it is sometimes possible
+to work around this by citing a *data paper* instead.
+This is a paper that describes the dataset and its collection
+without drawing any scientific conclusions from it.
+Such papers may be published in a special section of a regular journal,
+or in a dedicated *data journal* such as *Earth System Science Data*.^[*Earth
+System Science Data*, URL: <http://www.earth-syst-sci-data.net/>.]
+
+The placement of the data access statement/in-text citation varies between journals.
+Some, including those published by PLoS and Pensoft, specify the use of a dedicated section,
+for example ‘Data resources’ or ‘Data access and terms of use’ [@penev.etal2011pdp].
+Others encourage authors to place it at the end of the abstract.
+Where no specific advice is given, it is usually recommended that authors put
+the statement in the acknowledgements section; this is because, as with the
+acknowledgement of the grant, the statement is often a condition of funding and
+locating the two together simplifies the task of checking compliance [@rin2008afs].
+
+More detailed guidance on data access statements may be given by your institution.^[See,
+for example, guidance given by the universities of Bath
+(<http://www.bath.ac.uk/research/data/sharing-reuse/data-access-statement.html>)
+and Bristol (<http://data.bris.ac.uk/research/using-data/>).]
+
+
 ## Elements of a data citation {#sec:elements}
 
 The elements that would make up a complete citation are a matter of some
@@ -479,31 +526,6 @@ author names in textual citations, as in [Figure 4](#fig:orcid).
 \label{fig:orcid}
 
 \endfigure\egroup
-
-
-## Placement of data citations {#sec:place}
-
-Treating datasets as first-class records of research implies placing
-citations to them in the bibliography, works cited or references section
-of a document. This is required by Pensoft journals, for example, which
-also specify that the in-text pointer to the full citation should occur
-in a dedicated ‘Data Resources’ section [@penev.etal2011pdp].
-
-There is, however, a special relationship between a dataset and the
-paper describing its collection (as opposed to subsequent papers that
-cite it); it could be argued that the way to mark this would be to
-include the (full) data citation elsewhere in the document
-[@piwowar2011lfd]. The data publishing journal *Earth System Science
-Data*, for example, usually cites the collected data in a dedicated
-‘Data coverage and parameter measured’ section. Alternatively, if the
-acknowledgements section is already being mined for funder information,
-it may be appropriate to put the data citation there [@rin2008afs].
-
-On the other hand, there is value in citing datasets consistently across
-all papers, in terms of simplifying both editorial guidelines and author
-training. Bibliographies also tend to be better indexed and more freely
-available than the main texts of papers, and would therefore afford the
-citation greater visibility.
 
 \framed
 
