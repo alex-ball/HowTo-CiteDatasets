@@ -41,7 +41,7 @@ dtp: $(NAME).md $(BIB).bib dcchowto-template.latex
 	perl -0777 -p -i -e 's@\\texttt\{\\textless\{\}\}@\$$\\langle\$$@ig' $(NAME).tex
 	perl -0777 -p -i -e 's@\\texttt\{\\textgreater\{\}\}@\$$\\rangle\$$@ig' $(NAME).tex
 	perl -0777 -p -i -e 's@\\fullcite\{([^}]+)\}\\autocite\{\1\}@\\fullcite{\1}@ig' $(NAME).tex
-	latexmk -pdflatex="pdflatex -synctex=1 -interaction batchmode %O %S" -pdf $(NAME).tex
+	latexmk -quiet -pdflatex="pdflatex -synctex=1 -interaction batchmode %O %S" -pdf $(NAME).tex
 clean:
 	rm -f $(NAME).{aux,bbl,bcf,blg,fdb_latexmk,fls,log,out,run.xml,synctex.gz}
 	rm -f $(NAME)-tmp.md
