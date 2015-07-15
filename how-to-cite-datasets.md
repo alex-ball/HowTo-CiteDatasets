@@ -894,6 +894,24 @@ RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011sh
 \endframed
 
 
+### Granularity {#sec:granularity}
+
+It is the responsibility of the repository to ensure that datasets are made
+citeable and identifiable at an appropriate level of granularity.
+There are no hard and fast rules for this, as much depends on custom and practice
+within the discipline. As a rule of thumb, however, it is recommended that
+repositories assign identifiers at the finest level of granularity at which the
+data can be said to form an intellectual whole. Examples include a single genome,
+or the output of a single sensor during a mission.
+
+Where many such datasets are likely to be cited at once, repositories may also
+wish to assign identifiers for collections. In this case, the collection should
+also represent an intellectual whole, such as the data collected by a particular
+study or activity. The hierarchical relationships between the collection and its
+constituent parts should be recorded in the metadata for the collection and
+each part.
+
+
 ### Versioning {#sec:versions}
 
 One of the important features of the citation system is that a reader
@@ -942,7 +960,6 @@ store the data, so long as it can guarantee that the same identifier
 always returns the same data.
 
 \framed
-
 
 ## Summary for data repositories {#sec:summary-repositories}
 
