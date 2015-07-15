@@ -4,6 +4,7 @@ author:
 - 'Alex Ball (DCC)'
 - 'Monica Duke (DCC)'
 date: \today
+header-includes: '\settocdepth{subsection}'
 ---
 
 > This guide will help you create links between your academic publications
@@ -14,8 +15,8 @@ date: \today
 > and principal investigators working on data-led research, as well as the
 > data repositories with which they work.
 
-Why cite datasets and link them to publications? {#sec:why}
-================================================
+
+# Why cite datasets and link them to publications? {#sec:why}
 
 The motivation to cite datasets^[The term ‘dataset’ is used throughout this
 guide to mean a logically complete set of data; some systems or services prefer
@@ -63,8 +64,7 @@ necessary step if the culture of the scientific and research community
 as a whole is to shift towards data sharing, increasing the rapidity and
 transparency with which science advances.
 
-Principles of data citation {#sec:requirements}
-===========================
+# Principles of data citation {#sec:requirements}
 
 FORCE11, an international community of individuals and organisations
 interested in improving the scholarly communication process,
@@ -72,16 +72,16 @@ has published a set of data citation principles.[@fdcsg2014jdd]
 The principles build on earlier work in this area, most notably by
 CODATA,[@codata2013ooc]
 the (US) National Academies of Sciences, Engineering, and Medicine,[@uhlir2012fad]
-the Institute for Quantitative Social Science, Harvard University,[@altman.king2007pss]
-and the DCC.[@ball.duke2012dcl]
+the DCC,[@ball.duke2012dcl]
+and the Institute for Quantitative Social Science, Harvard University.[@altman.king2007pss]
 
 \framed[breakable]
 
 Importance
 
   : Data should be considered legitimate, citable products of research.
-    Data citations should be accorded the same importance in the scholarly record as citations of other research objects,
-    such as publications.
+    Data citations should be accorded the same importance in the scholarly record
+    as citations of other research objects, such as publications.
 
 Credit and Attribution
 
@@ -123,8 +123,15 @@ Interoperability and Flexibility
 
 \endframed
 
-Elements of a data citation {#sec:elements}
-===========================
+
+# Data citation for authors {#sec:for-authors}
+
+The first half of this guide is aimed predominantly at researchers.
+It discusses the practical business of citing datasets,
+such as how to construct a data citation and use it in a research paper.
+
+
+## Elements of a data citation {#sec:elements}
 
 The elements that would make up a complete citation are a matter of some
 debate. The following list is a superset taken from four different
@@ -271,8 +278,8 @@ Dataverse
 
 \endfigure\egroup
 
-Digital Object Identifiers {#sec:dois}
---------------------------
+
+## Digital Object Identifiers {#sec:dois}
 
 There are several types of persistent identifier that could be used to
 identify datasets: examples include Handles, Archival Resource Keys
@@ -364,16 +371,8 @@ workflows, to enable easy citation.
 
 \endframed
 
-Current issues and challenges {#sec:issues}
-=============================
 
-While the basics of data citation can be derived by analogy with the
-citation of textual publications, especially electronic ones, there are
-finer points such as issues of granularity, fine-grained and unambiguous
-credit and citation placement that merit special attention.
-
-Granularity {#sec:units}
------------
+## Granularity {#sec:units}
 
 With print publications, the issue of citing at different levels of
 granularity is relatively straightforward. The documents listed within a
@@ -401,8 +400,8 @@ several levels of granularity, the finest-grained level that meets the
 need of the citation should be used in the bibliography, to minimise the
 additional information needed.
 
-Microattribution {#sec:microattribution}
-----------------
+
+## Microattribution {#sec:microattribution}
 
 Where a dataset is assembled from very many contributions, crediting
 each contributor individually becomes unfeasible using traditional
@@ -427,8 +426,8 @@ making microattribution data available in machine-interpretable form,
 rather than as supplementary spreadsheets, to aid its use in metrics and
 other services.
 
-Contributor identifiers {#sec:ids}
------------------------
+
+## Contributor identifiers {#sec:ids}
 
 If contributors have a common name, or move between many different
 institutions, giving them an unambiguous credit is somewhat problematic.
@@ -482,8 +481,7 @@ author names in textual citations, as in [Figure 4](#fig:orcid).
 \endfigure\egroup
 
 
-Placement of data citations {#sec:place}
----------------------------
+## Placement of data citations {#sec:place}
 
 Treating datasets as first-class records of research implies placing
 citations to them in the bibliography, works cited or references section
@@ -509,8 +507,7 @@ citation greater visibility.
 
 \framed
 
-Summary for researchers {#sec:summary-researchers}
-=======================
+## Summary for researchers {#sec:summary-researchers}
 
 * If you have generated/collected data to be used as evidence in an
 academic publication, you should deposit them with a suitable data
@@ -543,17 +540,21 @@ paper.
 
 \endframed
 
-The remainder of this guide is aimed at those responsible for the
-supporting infrastructure, rather than researchers.
 
-Building a citation infrastructure {#sec:building-infrastructure}
-==================================
+# Data citation for repositories {#sec:for-repositories}
+
+The remainder of this guide is aimed at data repositories.
+It looks at the underlying infrastructure that supports data citation,
+and suggests ways in which repositories might participate in and build on existing activity.
+
+
+## Tools and services {#sec:building-infrastructure}
 
 This section provides an overview of some of the technologies available
 to support data citation.
 
-Citation Notification Service {#sec:trackbacks}
------------------------------
+
+### Citation Notification Service {#sec:trackbacks}
 
 The TrackBack protocol is one of a family of linkback protocols that
 allow a blog article to list and link to later articles that mention or
@@ -623,8 +624,8 @@ to work with DataCite DOIs.
 
 \endframed
 
-Nanopublications {#sec:nanopublications}
-----------------
+
+### Nanopublications {#sec:nanopublications}
 
 A nanopublication is, simply put, a statement and a set of annotations
 on it, the whole of which is citable in its own right
@@ -656,8 +657,8 @@ entities that do not sit easily within a formal ontology, a more relaxed
 approach such as that provided by the Concept Wiki can be used.^[Concept
 Wiki Website, URL: <http://www.conceptwiki.org/>.]
 
-Citation Typing Ontology {#sec:cito}
-------------------------
+
+### Citation Typing Ontology {#sec:cito}
 
 The Citation Typing Ontology (CiTO) is a formal language for specifying
 why one resource cites another [@shotton2010cct]. It contains several
@@ -685,16 +686,16 @@ nanopublications relate to one another, e.g. *confirms/is confirmed by*,
 *corrects/is corrected by*, *disagrees with/is disagreed with by*,
 *extends/is extended by*, *updates/is updated by*.
 
-Data citation infrastructures {#sec:infrastructure}
-=============================
+
+## Example implementations {#sec:infrastructure}
 
 The following repositories and systems provide examples of data citation
 infrastructures in practice, both in terms of human workflows and
 software, that could be reused by other repositories. Sample citations
 provided by each of them can be found in [Figure 2](#fig:repo-cites) above.
 
-PANGAEA {#sec:pangaea}
--------
+
+### PANGAEA {#sec:pangaea}
 
 PANGAEA (Data Publisher for Earth and Environmental Science) is hosted
 by the Alfred Wegener Institute for Polar and Marine Research and the
@@ -726,8 +727,8 @@ source software.^[PANGAEA Framework for Metadata Portals Website, URL:
 conversion tools have been made available as freeware.^[PANGAEA Software
 Web page, URL: <http://www.pangaea.de/software/>.]
 
-Dryad {#sec:dryad}
------
+
+### Dryad {#sec:dryad}
 
 Dryad is a data repository specialising in evolutionary biology and
 ecology, developed by the National Evolutionary Synthesis Center and the
@@ -754,8 +755,8 @@ Dryad is based on the DSpace digital repository;^[DSpace Website, URL:
 <http://www.dspace.org/>.] the Dryad extensions have been released as open
 source software.^[Dryad code repository, URL: <http://dryad.googlecode.com/>.]
 
-Dataverse {#sec:dataverse}
----------
+
+### Dataverse {#sec:dataverse}
 
 The Dataverse Network is a software application for building data
 repositories called dataverses.^[Dataverse Network Project Website, URL:
@@ -786,14 +787,14 @@ Alternatively, institutions can set up their own Dataverse
 Network using the open source software.^[Dataverse Network code repository, URL:
 <http://sourceforge.net/projects/dvn/>.]
 
-Current implementation issues {#sec:implementation-issues}
-=============================
+
+## Current implementation issues {#sec:implementation-issues}
 
 Two current issues for repositories are how to cater for both manual and
 automatic uses of citations, and how to deal with dynamic datasets.
 
-Manual and automatic use of citations {#sec:robots}
--------------------------------------
+
+### Manual and automatic use of citations {#sec:robots}
 
 It is good practice for the URL in a data citation to lead to a *landing
 page* for the dataset, rather than to initiate a direct download. The
@@ -880,8 +881,8 @@ RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011sh
 
 \endframed
 
-Versioning {#sec:versions}
-----------
+
+### Versioning {#sec:versions}
 
 One of the important features of the citation system is that a reader
 should be able to identify and retrieve the exact same resource that the
@@ -930,8 +931,8 @@ always returns the same data.
 
 \framed
 
-Summary for data repositories {#sec:summary-repositories}
-=============================
+
+## Summary for data repositories {#sec:summary-repositories}
 
 * Ensure that anyone wishing to cite a dataset you host can use a
 persistent identifier that you provide to do so. For this, choose an
@@ -966,16 +967,16 @@ contact the California Digital Library.
 
 \endframed
 
-Acknowledgements {#sec:acknowledgements}
-================
+
+# Acknowledgements {#sec:acknowledgements}
 
 Thank you to Sarah Callaghan (STFC), Shirley Crompton (STFC), Michael
 Diepenbroek (WDC-MARE), Margaret Henty (ANDS), Catherine Jones (STFC),
 Sarah Jones (DCC), Florance Kennedy (DCC), Phillip Lord (Newcastle
 University) and Tom Pollard (BL) for helpful comments.
 
-Further information {#sec:further-information}
-===================
+
+# Further information {#sec:further-information}
 
 \setlength{\parindent}{0pt}\nonzeroparskip\color{dccblue}\small
 Two other DCC guides cover this topic:
