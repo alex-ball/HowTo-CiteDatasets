@@ -356,67 +356,13 @@ While there are several services available that can resolve a DOI to an
 Internet location,^[Some publishers provide resolvers for their own DOIs, while
 the Handle resolver <http://hdl.handle.net/> can be used for any DOI.] the
 preferred one is <http://dx.doi.org/>. Appending a DOI to this URL creates a
-further URL that can be used to access the associated resource.
+further URL that can be used to access the associated resource. Authors are
+encouraged to use the URL version of the DOI wherever possible, though some
+publishers prefer to print the bare DOI and embed the URL form as a hyperlink
+in digital versions.
 
-The task of managing the DOI registers is delegated to registration
-agencies that each specialise in a type of resource. For research
-datasets, the registration agency is the DataCite Consortium.^[DataCite
-Website, URL: <http://www.datacite.org/>.] The
-consortium is made up of libraries and data centres from across the
-globe, led by the German National Library of Science and Technology
-(TIB). Among the services it provides are human and machine interfaces
-for simple end-user administration of DOI registrations. DataCite also
-collects metadata about each dataset it registers.^[DataCite Metadata Schema
-Repository, URL: <http://schema.datacite.org/>. Version 2.0 of the DataCite
-metadata scheme is discussed by Starr and Gastl.\footref{fn:starr.gastl}] These metadata
-may be searched through a Web interface^[DataCite Metadata Search service,
-URL: <http://search.datacite.org/>.] or harvested using
-OAI-PMH.^[DataCite OAI-PMH service, URL: <http://oai.datacite.org/>.]
-
-*Individuals* wishing to register a DOI for their dataset normally do so
-via their data repository, rather than directly through DataCite. Any
-*repository* wishing to register DOIs needs to obtain a username and
-password from DataCite to gain access to the registration service.
-Alternatively, the organisation can manage its DOIs through a
-third-party service such as EZID.^[EZID Website, URL:
-<http://ezid.cdlib.org/>.] The username and password are not
-needed for the metadata search or OAI-PMH services.
-
-While best practice has yet to emerge on some matters, (see ‘[Current
-issues and challenges](#sec:issues)’ below),
-certain conventions are already becoming established.
-
--   Authors should use the URL version of the DOI (i.e. including the
-    resolver) wherever possible.
-
--   When organisations register a DOI for a resource, they should not
-    introduce semantic elements into the suffix, especially not metadata
-    that might change over time (e.g. publisher, archive, owner).
-
--   As DOIs are used to cite data as evidence, the dataset to which a
-    DOI points should also remain unchanged, with any new version
-    receiving a new DOI.
-
-\framed
-\noindent{}**Example**
-
-\smallskip
-\noindent{}The Sage Commons is an infrastructure for managing large,
-multi-contributor datasets in the area of biomedical research, developed by Sage
-Bionetworks.[@derry.etal2011dpm] One component of this is Synapse, a platform
-for sharing data, code and analyses and linking them together into workflows,
-alongside provenance data and documentation.^[Synapse, URL:
-<https://www.synapse.org/>] Sharing workflows in this way helps other scientists
-to reproduce the research, thereby verifying the results. It also permits more
-efficient research by allowing scientists to build more easily on each others'
-work.
-
-Taking forward ideas pioneered in the SageCite project,^[SageCite Project blog,
-URL: <http://blogs.ukoln.ac.uk/sagecite/>] Synapse provides functionality to
-assign DOIs to any resources shared through the platform, including datasets and
-workflows, to enable easy citation.
-
-\endframed
+Individuals wishing to register a DOI for their dataset would normally do so
+via their data repository.
 
 
 ## Granularity {#sec:units}
@@ -574,6 +520,61 @@ and suggests ways in which repositories might participate in and build on existi
 
 This section provides an overview of some of the technologies available
 to support data citation.
+
+
+### DataCite DOIs {#sec:datacite}
+
+The task of managing DOI registers is delegated to registration agencies
+that each specialise in a type of resource.
+For research datasets, the registration agency is the DataCite Consortium.^[DataCite
+Website, URL: <http://www.datacite.org/>.]
+The consortium is made up of libraries and data centres from across the globe,
+led by the German National Library of Science and Technology (TIB).
+Among the services it provides are human and machine interfaces
+for simple end-user administration of DOI registrations.
+DataCite also collects metadata about each dataset it registers.^[DataCite
+Metadata Schema Repository, URL: <http://schema.datacite.org/>.]
+These metadata may be searched through a Web interface^[DataCite Metadata Search
+service, URL: <http://search.datacite.org/>.] or harvested using OAI-PMH.^[DataCite
+OAI-PMH service, URL: <http://oai.datacite.org/>.]
+
+Any repository wishing to register DOIs needs to obtain a username and password
+from DataCite to gain access to the registration service.
+Alternatively, the organisation can manage its DOIs through a third-party service
+such as EZID.^[EZID Website, URL: <http://ezid.cdlib.org/>.]
+The username and password are not needed for the metadata search or OAI-PMH services.
+
+While best practice has yet to emerge on some matters, certain conventions are
+already becoming established.
+
+  * When organisations register a DOI for a resource, they should not
+    introduce semantic elements into the suffix, especially not metadata
+    that might change over time (e.g. publisher, archive, owner).
+
+  * As DOIs are used to cite data as evidence, the dataset to which a
+    DOI points should also remain unchanged, with any new version
+    receiving a new DOI.
+
+\framed
+\noindent{}**Example**
+
+\smallskip
+\noindent{}The Sage Commons is an infrastructure for managing large,
+multi-contributor datasets in the area of biomedical research, developed by Sage
+Bionetworks.[@derry.etal2011dpm] One component of this is Synapse, a platform
+for sharing data, code and analyses and linking them together into workflows,
+alongside provenance data and documentation.^[Synapse, URL:
+<https://www.synapse.org/>] Sharing workflows in this way helps other scientists
+to reproduce the research, thereby verifying the results. It also permits more
+efficient research by allowing scientists to build more easily on each others'
+work.
+
+Taking forward ideas pioneered in the SageCite project,^[SageCite Project blog,
+URL: <http://blogs.ukoln.ac.uk/sagecite/>] Synapse provides functionality to
+assign DOIs to any resources shared through the platform, including datasets and
+workflows, to enable easy citation.
+
+\endframed
 
 
 ### Citation Notification Service {#sec:trackbacks}
