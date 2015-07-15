@@ -343,7 +343,7 @@ themselves have the standard Handle structure of prefix, slash, suffix
 prefix may be further subdivided with dots, but otherwise the characters
 in a DOI have no special significance.
 
-\bgroup\figure[ht]\shaded\small
+\bgroup\figure[h!]\shaded\small
 \input{fig-doi}
 
 \endshaded
@@ -369,12 +369,12 @@ via their data repository.
 
 With print publications, the issue of citing at different levels of
 granularity is relatively straightforward. The documents listed within a
-bibliography or reference section represent intellectual wholes:
+bibliography or reference list represent intellectual wholes:
 single-author monographs are referenced as whole books, but with journal
 issues, conference proceedings and edited collections the relevant
 papers are referenced individually. More granular references (to
 sections, pages, etc.) are made at the point of citation in the text,
-rather than in the bibliography.
+rather than in the reference list.
 
 Datasets are a little more complicated. A dataset may form part of a
 collection and be made up of several files, each containing several
@@ -390,7 +390,7 @@ required, the in-text citation should provide the reader with the
 information needed to find the subset. As conventions for doing this
 have yet to be established, if the repository provides identifiers at
 several levels of granularity, the finest-grained level that meets the
-need of the citation should be used in the bibliography, to minimise the
+need of the citation should be used in the reference list, to minimise the
 additional information needed.
 
 
