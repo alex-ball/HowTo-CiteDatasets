@@ -477,34 +477,34 @@ author names in textual citations, as in [Figure 4](#fig:orcid).
 
 ## Summary for researchers {#sec:summary-researchers}
 
-* If you have generated/collected data to be used as evidence in an
-academic publication, you should deposit them with a suitable data
-archive or repository as soon as you are able. If they do not provide
-you with a persistent identifier or URL for your data, encourage them to
-do so.
+  * If you have generated/collected data to be used as evidence in an
+    academic publication, you should deposit them with a suitable data
+    archive or repository as soon as you are able. If they do not provide
+    you with a persistent identifier or URL for your data, encourage them to
+    do so.
 
-* When citing a dataset in a paper, use the citation style required by the
-editor/publisher. If no form is suggested for datasets, take a standard
-data citation style (e.g. DataCite’s[@starr.gastl2011ims]) and adapt it to match the style
-for textual publications.
+  * When citing a dataset in a paper, use the citation style required by the
+    editor/publisher. If no form is suggested for datasets, take a standard
+    data citation style (e.g. DataCite’s^[‘Cite your data’, URL: <https://www.datacite.org/services/cite-your-data.html>.])
+    and adapt it to match the style for textual publications.
 
-* Give dataset identifiers in the form of a URL wherever possible, unless
-otherwise directed.
+  * Give dataset identifiers in the form of a URL wherever possible, unless
+    otherwise directed.
 
-* Include data citations alongside those for textual publications. Some
-reference management packages now include support for datasets, which
-should make this easier.
+  * Include data citations alongside those for textual publications. Some
+    reference management packages now include support for datasets, which
+    should make this easier.
 
-* Cite datasets at the finest-grained level available that meets your
-need. If that is not fine enough, provide details of the subset of data
-you are using at the point in the text where you make the citation.
+  * Cite datasets at the finest-grained level available that meets your
+    need. If that is not fine enough, provide details of the subset of data
+    you are using at the point in the text where you make the citation.
 
-* If a dataset exists in several versions, be sure to cite the exact
-version you used.
+  * If a dataset exists in several versions, be sure to cite the exact
+    version you used.
 
-* When you publish a paper that cites a dataset, notify the repository
-that holds the dataset, so it can add a link from that dataset to your
-paper.
+  * When you publish a paper that cites a dataset, notify the repository
+    that holds the dataset, so it can add a link from that dataset to your
+    paper.
 
 \endframed
 
@@ -555,26 +555,15 @@ already becoming established.
     DOI points should also remain unchanged, with any new version
     receiving a new DOI.
 
-\framed
-\noindent{}**Example**
+Various organisations have shared their experiences of working with DataCite:
 
-\smallskip
-\noindent{}The Sage Commons is an infrastructure for managing large,
-multi-contributor datasets in the area of biomedical research, developed by Sage
-Bionetworks.[@derry.etal2011dpm] One component of this is Synapse, a platform
-for sharing data, code and analyses and linking them together into workflows,
-alongside provenance data and documentation.^[Synapse, URL:
-<https://www.synapse.org/>] Sharing workflows in this way helps other scientists
-to reproduce the research, thereby verifying the results. It also permits more
-efficient research by allowing scientists to build more easily on each others'
-work.
-
-Taking forward ideas pioneered in the SageCite project,^[SageCite Project blog,
-URL: <http://blogs.ukoln.ac.uk/sagecite/>] Synapse provides functionality to
-assign DOIs to any resources shared through the platform, including datasets and
-workflows, to enable easy citation.
-
-\endframed
+  * Archaeology Data Service; University of Southampton [@bl2013wwb].
+  * Australian Antarctic Division; Australian National University;
+    Dryad [@andsNDdc].
+  * ForestPlots.net, University of Leeds [@bl2015dcs].
+  * Griffith University [@simons2012idr].
+  * UK Data Archive [@jisc2012dih].
+  * University of Bristol [@duke.gray2014ado].
 
 
 ### Citation Notification Service {#sec:trackbacks}
@@ -1015,16 +1004,18 @@ Two other DCC guides cover this topic:
 \normalcolor
 The following may also be of interest:
 
--   \fullcite{ands2011dca}[@ands2011dca]
+  * \fullcite{andsNDdc}[@andsNDdc]
 
--   \fullcite{lane2008dce}[@lane2008dce]
+  * \fullcite{ands2011dca}[@ands2011dca]
 
--   \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
+  * \fullcite{lane2008dce}[@lane2008dce]
 
--   \fullcite{page2009spt}[@page2009spt]
+  * \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
 
--   \fullcite{icpsr2011whs}[@icpsr2011whs]
+  * \fullcite{page2009spt}[@page2009spt]
 
--   \fullcite{wilkinson2011syw}[@wilkinson2011syw]
+  * \fullcite{icpsr2011whs}[@icpsr2011whs]
 
--   \fullcite{wilkinson2011wdw}[@wilkinson2011wdw]
+  * \fullcite{wilkinson2011syw}[@wilkinson2011syw]
+
+  * \fullcite{wilkinson2011wdw}[@wilkinson2011wdw]
