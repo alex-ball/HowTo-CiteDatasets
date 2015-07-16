@@ -554,46 +554,19 @@ Various organisations have shared their experiences of working with DataCite:
   * University of Bristol [@duke.gray2014ado].
 
 
-### Citation Notification Service {#sec:trackbacks}
+### Notification Services {#sec:trackbacks}
 
+The CLADDIER Project developed a prototype Citation Notification Service
+for use by digital object repositories, based on the
+TrackBack protocol.^[CLADDIER Project page, URL:
+<http://www.jisc.ac.uk/whatwedo/programmes/digitalrepositories2005/claddier>.]
 The TrackBack protocol is one of a family of linkback protocols that
 allow a blog article to list and link to later articles that mention or
 comment on it, allowing the reader to follow a debate across many blogs
-[@sixapart2002tts]. It works in the following way. On publication of an
-article, the blogging software looks up all the pages to which the
-article links, and scans them for embedded TrackBack URLs. Having found
-one, the software sends an HTTP POST request (as used by longer Web
-forms) to the TrackBack URL. At a minimum, the request contains a link
-to the article; it may also contain the article’s title, the title of
-the blog, and an excerpt typically showing the link in context. The blog
-responsible for the TrackBack URL then sends back a brief XML
-acknowledgement to indicate either success or failure in understanding
-the request, known as a TrackBack ‘ping’.
-
-The CLADDIER Project defined an extended version of the TrackBack
-protocol for use as a Citation Notification Service in digital object
-repositories.^[CLADDIER Project page, URL:
-<http://www.jisc.ac.uk/whatwedo/programmes/digitalrepositories2005/claddier>.]
-The main extensions were, at the sending
-end,[@matthews.etal2007rdp][@matthews.etal2009pes]
-
--   ‘metadata’ and ‘metadataformat’ fields for adding arbitrary metadata
-    to the TrackBack ping;
-
--   a ‘type’ field to allow the same protocol to be used for forward
-    citations (‘reverse TrackBacks’) and republications;
-
--   an ‘action’ field to allow existing TrackBacks to be removed (an
-    ‘anti-TrackBack’) or edited;
-
-and at the receiving end
-
--   additional RDF metadata that could be embedded alongside the
-    TrackBack URL, such as bibliographic information about the citable
-    resource (to permit reverse TrackBacks) or an alternative URL to
-    which to send anti-TrackBack pings;
-
--   the option to use a whitelist of trusted senders to prevent spam.
+[@sixapart2002tts]. CLADDIER extended the protocol to permit richer metadata
+to be communicated each way between the citing and cited systems,
+allow previous TrackBacks to be updated or deleted,
+and reduce the likelihood of spam TrackBacks.[@matthews.etal2007rdp][@matthews.etal2009pes]
 
 As a demonstration, CLADDIER implemented the Citation Notification
 System in STFC’s ePub repository and the BADC repository. The follow-on
@@ -601,11 +574,11 @@ project StoreLink implemented the system as plugins for EPrints, DSpace
 and Fedora repository software.^[StoreLink Project summary Web page, URL:
 <http://www.jisc.ac.uk/whatwedo/programmes/digitalrepositories2007/storelink.aspx>.]
 StoreLink was itself followed by
-the Webtracks Project, which is generalising the system to form the
-Inter-Repository Communication (InteRCom) protocol and extending its
+the Webtracks Project, which generalised the system to form the
+Inter-Repository Communication (InteRCom) protocol and extend its
 usage beyond e-print repositories to STFC’s ICAT data catalogue, open
-electronic notebooks and scientific publishers.^[Webtracks Project Web page, URL:
-<http://www.stfc.ac.uk/e-Science/projects/medium-term/metadata/webtracks/22422.aspx>.]
+electronic notebooks and scientific publishers.^[Webtracks Project blog, URL:
+<http://webtracks.jiscinvolve.org/>.]
 
 \framed
 \noindent{}**Example**
@@ -623,6 +596,17 @@ PubMed identifier,[@lord.etal2011okb] though this has not yet been extended
 to work with DataCite DOIs.
 
 \endframed
+
+The SHARE initiative is implementing a different notification system that,
+while not directly related to citation, may assist with setting up links between
+systems.^[SHARE initiative Website, URL: <http://www.share-research.org/>.]
+The SHARE Notify service collects metadata from publishers and repositories
+about events such as data or pre-prints being deposited, or papers being published.
+This metadata is indexed in a database and made available through JSON and Atom feeds.
+If repository is aware that a manuscript related to a dataset it holds is about
+to be published, it could monitor to feeds to discover when publication occurs.
+Similarly, by contributing to the SHARE Notify service, the repository could
+enable a publisher to discover when the dataset underlying a manuscript has been released.
 
 
 ### Nanopublications {#sec:nanopublications}
