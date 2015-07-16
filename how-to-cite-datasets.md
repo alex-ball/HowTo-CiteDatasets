@@ -597,7 +597,7 @@ to work with DataCite DOIs.
 
 \endframed
 
-The SHARE initiative is implementing a different notification system that,
+The US-based SHARE initiative is implementing a different notification system that,
 while not directly related to citation, may assist with setting up links between
 systems.^[SHARE initiative Website, URL: <http://www.share-research.org/>.]
 The SHARE Notify service collects metadata from publishers and repositories
@@ -609,9 +609,34 @@ Similarly, by contributing to the SHARE Notify service, the repository could
 enable a publisher to discover when the dataset underlying a manuscript has been released.
 
 
+### Citation tracking services {#sec:tracking}
+
+One of the benefits of using formal data citations is that it should make it
+easier to assemble evidence that a dataset has had impact.
+As of mid-2015 it is quite hard to do this due the variety of ways in which
+datasets are referenced in the literature.
+Nevertheless there are some services available that index these references.
+
+The Thomson Reuters Data Citation Index was launched in October 2012.^[Thomson Reuters
+Data Citation Index product page, URL: <http://wokinfo.com/products_tools/multidisciplinary/dci/>]
+It tracks citations and less structured references to data at four levels of granularity:
+nanopublications (see below), datasets, research studies, and data repositories.
+It relies not only on access to the full text of publications but also an index
+of available datasets, the information for which is drawn from data repositories,
+data discovery services and DataCite.
+
+Europe PubMed Central routinely text-mines its archive of full text articles for data citations.
+The resulting information is used by the PLoS Article Level Metrics service [@lin.fenner2013rfg],
+and is also available through the Europe PubMed Central RESTful Web service.^[Europe
+PubMed Central RESTful Web service, URL: <http://europepmc.org/RestfulWebService>.]
+
+For more information about tracking the impact of datasets, please see the DCC guide
+‘How to Track the Impact of Research Data with Metrics’ [@ball.duke2015hti].
+
+
 ### Nanopublications {#sec:nanopublications}
 
-A nanopublication is, simply put, a statement and a set of annotations
+A nanopublication is a statement and a set of annotations
 on it, the whole of which is citable in its own right
 [@groth.etal2010anp]. The idea is that a scientific publication or
 dataset is broken down into individual statements, expressed as RDF
