@@ -375,35 +375,6 @@ Individuals wishing to register a DOI for their dataset would normally do so
 via their data repository.
 
 
-## Granularity {#sec:units}
-
-With print publications, the issue of citing at different levels of
-granularity is relatively straightforward. The documents listed within a
-bibliography or reference list represent intellectual wholes:
-single-author monographs are referenced as whole books, but with journal
-issues, conference proceedings and edited collections the relevant
-papers are referenced individually. More granular references (to
-sections, pages, etc.) are made at the point of citation in the text,
-rather than in the reference list.
-
-Datasets are a little more complicated. A dataset may form part of a
-collection and be made up of several files, each containing several
-tables, each containing many data points. There are also more abstract
-subsets that can be used, such as features and parameters. At the other
-end of the scale, it is not always obvious what would constitute an
-intellectual whole: it can be argued, for example, that investigations
-should be the primary units of citation rather than individual datasets
-[@lawrence2011cdo]. For authors, the pragmatic solution is to list
-datasets at whatever level of granularity has been chosen by the host
-repository for assigning identifiers. If a finer level of granularity is
-required, the in-text citation should provide the reader with the
-information needed to find the subset. As conventions for doing this
-have yet to be established, if the repository provides identifiers at
-several levels of granularity, the finest-grained level that meets the
-need of the citation should be used in the reference list, to minimise the
-additional information needed.
-
-
 ## Contributor identifiers {#sec:ids}
 
 If contributors have a common name, or move between many different
@@ -456,6 +427,35 @@ author names in textual citations, as in [Figure 4](#fig:orcid).
 \label{fig:orcid}
 
 \endfigure\egroup
+
+## Granularity {#sec:units}
+
+With print publications, the issue of citing at different levels of
+granularity is relatively straightforward. The documents listed within a
+bibliography or reference list represent intellectual wholes:
+single-author monographs are referenced as whole books, but with journal
+issues, conference proceedings and edited collections the relevant
+papers are referenced individually. More granular references (to
+sections, pages, etc.) are made at the point of citation in the text,
+rather than in the reference list.
+
+Datasets are a little more complicated. A dataset may form part of a
+collection and be made up of several files, each containing several
+tables, each containing many data points. There are also more abstract
+subsets that can be used, such as features and parameters. At the other
+end of the scale, it is not always obvious what would constitute an
+intellectual whole: it can be argued, for example, that investigations
+should be the primary units of citation rather than individual datasets
+[@lawrence2011cdo]. For authors, the pragmatic solution is to list
+datasets at whatever level of granularity has been chosen by the host
+repository for assigning identifiers. If a finer level of granularity is
+required, the in-text citation should provide the reader with the
+information needed to find the subset. As conventions for doing this
+have yet to be established, if the repository provides identifiers at
+several levels of granularity, the finest-grained level that meets the
+need of the citation should be used in the reference list, to minimise the
+additional information needed.
+
 
 \framed
 
