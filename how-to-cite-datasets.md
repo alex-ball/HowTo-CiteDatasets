@@ -445,6 +445,22 @@ need of the citation should be used in the reference list, to minimise the
 additional information needed.
 
 
+## Citing unreleased data {#sec:unreleased}
+
+If citing a dataset that is not yet released, the rule of thumb is to provide
+in the reference as much information about it as is already known. At the least
+this should include the creator and title of the dataset. If the dataset has not
+yet been deposited, the date of collection should be included. If the dataset
+has been deposited but an online record is not yet available, the date can be
+given as ‘in press’ and the repository given in the publisher position. Once an
+online record is available, the full citation can be given. The full details of
+the status of the dataset – whether deposited, embargoed, restricted or openly
+available – should be explained in the data access statement.
+
+As with references to manuscripts that have not yet been published,
+authors should revisit references to unreleased data prior to publication to
+ensure the information is as up to date as possible.
+
 \framed
 
 ## Summary for researchers {#sec:summary-researchers}
