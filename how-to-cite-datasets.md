@@ -388,20 +388,19 @@ rather than attribution. There are however two schemes being developed
 specifically for attribution.
 
 The Open Researcher and Contributor Identifier (ORCID) is a scheme
-specifically aimed at academic authors.^[ORCID Initiative Website,
-URL: <http://about.orcid.org/>.] It has gained support from
-over 200 organisations, including major academic publishers. The
-underlying infrastructure is still being developed as of mid-2011, but
-the intention is to maintain a registry of IDs, each associated with a
-researcher profile and a list of publications to which that researcher
-has contributed. The registry will also allow the profile to be linked
+specifically aimed at academic authors.^[ORCID Website,
+URL: <http://orcid.org/>.] It has gained support from over 300 organisations,
+including major academic publishers, and been integrated into numerous research systems.
+Researchers can associate with their ORCID profiles a list of works to which
+they have contributed, as well as grants received and their educational and
+employment history. ORCID profiles can also be linked
 to identifiers and profiles from other schemes such as Thomson Reuters’
 ResearcherID,^[ResearcherID Website, URL: <http://www.researcherid.com/>.
 ] Scopus,^[Scopus Website, URL: <http://www.scopus.com/>.] Scholar
 Universe,^[Scholar Universe, URL: <http://www.scholaruniverse.com/>.] and
 RePEc.^[RePEc Author Service Website, URL: <http://authors.repec.org/>.]
 
-The International Standard Name Identifier (ISNI) scheme is a draft ISO
+The International Standard Name Identifier (ISNI) scheme is an ISO
 standard for registering ‘Public Identities’: people, pseudonyms,
 personas and legal entities involved in the creation or distribution of
 intellectual property [@iso27729]. It is thus a broader scheme than
@@ -411,22 +410,11 @@ ISNIs take the form of a 16-digit number (though the last digit may be
 details such as name(s), date of birth, fields of endeavour and roles
 within them, titles of creations and a URI for further information.
 
-As the primary utility for such identifiers will be to support software
-tools, they will probably be better placed in machine-readable metadata
-than written out for human inspection. Nevertheless, the ORCID
-Initiative envisages ORCID IDs being included in parentheses after
-author names in textual citations, as in [Figure 4](#fig:orcid).
+As the primary utility for such identifiers is to support software tools,
+they are better placed in machine-readable metadata than written out for human inspection.
+It is therefore recommended that authors do not attempt to include ORCIDs or similar in their reference lists,
+but rather ensure they supply their own ORCID to publishers and repositories at the point of making their submission.
 
-\bgroup\figure[ht]\shaded\small
-\noindent{}Chaturvedi, V. (AAA-1019-2010). (2004). Editorial.
-*Mycopathologia, 157,* iii–iv. Retrieved from
-<http://dx.doi.org/10.1023/B:MYCO.0000020677.89178.15>
-
-\endshaded
-\caption{Example citation using an ORCID ID}
-\label{fig:orcid}
-
-\endfigure\egroup
 
 ## Granularity {#sec:units}
 
@@ -818,8 +806,8 @@ an OAI-ORE Resource Map [@lagoze.etal2008oug].
 Clearly humans and software have different requirements for the dataset
 landing page. One way to satisfy both would be to embed the metadata
 intended for software tools as RDF within the human-readable Web page.
-This can be done using either RDFa as in [Figure 5](#fig:rdfa)
-[@adida.birbeck2008rp], or HTML5 microdata as in [Figure 6](#fig:html5)
+This can be done using either RDFa as in [Figure 4](#fig:rdfa)
+[@adida.birbeck2008rp], or HTML5 microdata as in [Figure 5](#fig:html5)
 [@w3c2011hm].
 
 \bgroup\figure[ht]\shaded\small
