@@ -177,6 +177,16 @@ for example, guidance given by the universities of Bath
 (<http://www.bath.ac.uk/research/data/sharing-reuse/data-access-statement.html>)
 and Bristol (<http://data.bris.ac.uk/research/using-data/>).]
 
+It is also possible to reference data from non-textual outputs, such as other datasets.
+Indeed, doing so may help satisfy the licensing conditions of the earlier datasets
+and encourage data sharing by supporting transitive credit models [@katz2014tcm].
+One straightforward way of doing this is to include with the dataset a table
+that lists the source datasets and indicates the subset that each one contributed.
+An early example of this was published as part of the supplementary data of a
+2011 paper on microattribution for genetic variation data [@giardine.etal2011sda].
+Another solution is to see if the repository holding the data will
+record the information among the metadata it holds for the dataset.
+
 
 ## Elements of a data citation {#sec:elements}
 
@@ -392,32 +402,6 @@ have yet to be established, if the repository provides identifiers at
 several levels of granularity, the finest-grained level that meets the
 need of the citation should be used in the reference list, to minimise the
 additional information needed.
-
-
-## Microattribution {#sec:microattribution}
-
-Where a dataset is assembled from very many contributions, crediting
-each contributor individually becomes unfeasible using traditional
-techniques. Microattribution is a way of crediting contributors in a
-more compact fashion, to keep the operation manageable. It can also be
-used to credit people or organisations whose contributions don’t fit the
-roles of creator or compiler: for example, those who implement or carry
-out intermediate data processing steps.
-
-Instead of providing a traditional citation to the data collection paper
-associated with each contribution, a table is produced that lists each
-contribution and the agent responsible. Where possible, standard
-identifiers (for both contributions and contributors) are used to
-abbreviate the entries, and the table is included in the paper’s
-supplementary data.
-
-This technique is still relatively new: the first paper to use
-microattribution to encourage comprehensive sharing of genetic variation
-data in a defined system was published in 2011 [@giardine.etal2011sda].
-Once the technique is more established, repositories should consider
-making microattribution data available in machine-interpretable form,
-rather than as supplementary spreadsheets, to aid its use in metrics and
-other services.
 
 
 ## Contributor identifiers {#sec:ids}
