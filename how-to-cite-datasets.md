@@ -634,6 +634,27 @@ For more information about tracking the impact of datasets, please see the DCC g
 ‘How to Track the Impact of Research Data with Metrics’ [@ball.duke2015hti].
 
 
+### Network tracking services {sec:network}
+
+The DLI (Data Literature Interlinking) Service is a result of a collaboration
+between the ICSU-WDS/RDA Data Publishing Services Working Group and the
+OpenAIRE initiative.^[DLI Service, URL: <http://dliservice.research-infrastructures.eu/>.]
+The aim of the service is to create a centrally curated graph of links between publications and datasets.
+Instead of relying on many bilateral arrangements between organisations, the idea is that
+publishers contribute to the graph links relating to articles they have published,
+while repositories contribute links relating to datasets they hold.
+Any interested party can then look up a resource in the graph and see which other resources are related to it,
+perhaps to enhance a record for that resource or perform bibliometric analysis.
+The graph may be queried either through a graphical Web interface or via an API.
+
+The RMap Project is an initiative undertaken by the Data Conservancy, Portico and IEEE,
+with funding from the Alfred P. Sloan Foundation.^[RMap Project, URL: <http://rmap-project.info/rmap/>.]
+It has very similar aims to the DLI Service and is working closely with it.
+The scope of RMap is however a little broader, as it also records links with
+agents (authors, publishers, repositories, etc.) and software.
+The RMap graph may be queried via an API.
+
+
 ### Nanopublications {#sec:nanopublications}
 
 A nanopublication is a statement and a set of annotations
