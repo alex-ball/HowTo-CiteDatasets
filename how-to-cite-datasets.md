@@ -1082,6 +1082,10 @@ Two other DCC guides cover this topic:
     Identifiers*](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/persistent-identifiers)
     \(2006\) by Joy Davidson
 
+  * **Working Level:** [*How to Track the Impact of Research Data with
+    Metrics*](http://www.dcc.ac.uk/resources/how-guides/track-data-impact-metrics)
+    \(2015\) by Alex Ball and Monica Duke
+
 \normalcolor
 The following may also be of interest:
 
