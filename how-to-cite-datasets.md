@@ -978,31 +978,50 @@ datasets, and it is a slightly different problem depending on whether
 the dataset is frequently *revised*, that is, data points are
 continually improved or updated, or frequently *expanded*, such as
 sensor data maintained as a time series. Either way, to keep the
-versions manageable there are two possible approaches the data
-repository can take: time slices and snapshots.
+versions manageable repositories can present versions in three ways:
+time slices, full snapshots and partial snapshots.
 
-With the *snapshot* approach, at regular intervals or at the request of
-a citing author, a snapshot is taken of the dataset and made citable.
-This is the better solution for revised datasets, as after retrieving
-the data the reader or author need not perform any additional operations
-to arrive at the required data. It is also better for expanding datasets
-where authors are concerned with the whole time series.
+With the *time slice* approach, the citable entity is the set of updates made to
+a dataset during a particular time period. This would be rather cumbersome for
+revisions to datasets, but may be appropriate for expanding datasets if
+researchers are only likely to need one or two of the time slices (e.g. weather
+data for a given year).
 
-With the *time slice* approach, the citable entity becomes the set of
-updates made to a dataset during a particular time period rather than
-the full dataset itself (e.g. the 2008 data from a series running since
-1950). This would be inappropriate for revised datasets, as the author
-or reader would need to assemble the data from a base file and several
-incremental change files. To a lesser extent, it would also be
-cumbersome for authors using a large proportion of an expanding dataset,
-as they would need to cite multiple time slices to build up the required
-range; but if an author is only concerned with data from a short period
-of time this approach is more suitable than a full snapshot.
+With the *full snapshot* approach, at regular intervals or at the request of a
+citing author, a snapshot is taken of the entire dataset and made citable. This
+is a better solution for revised datasets, as after retrieving the data the
+reader or author need not perform any additional operations to arrive at the
+required data. It is also better for expanding datasets where authors are
+concerned with the whole time series.
 
-Note that these discussions only concern how datasets are presented to
-users as citable resources. It does not affect how a repository might
-store the data, so long as it can guarantee that the same identifier
-always returns the same data.
+The recommendation of the Research Data Alliance Working Group on Data Citation
+(RDA WGDC) is however to use *partial snapshots*. This is where the citable
+entity is the result of a particular query on a dataset run at a certain time.
+If the query retrieves the full dataset, this approach reduces to the full
+snapshot approach, but otherwise it has the advantage of making the snapshot
+more precisely relevant to the research in question.
+
+Note that these discussions only concern how datasets are presented to users as
+citable resources; they may be stored quite differently by repositories. The RDA
+WGDC recommends that datasets are versioned and operations on them (i.e.
+additions, modifications and deletions) are logged and timestamped so that the
+state of a set at any given time may be recreated. To support partial snapshots,
+the WGDC recommends the following steps:
+
+ 1. When a user requests a citable snapshot, the query used is normalised,
+    logged, timestamped, and compared against previous queries.
+
+ 2. If the query has been used before to create a snapshot, and the result set
+    has not changed in the meantime (as determined by checksums), the previous
+    snapshot identifier/landing page is reused. Otherwise a new one is created.
+
+ 3. The landing page for the query should contain details of the full dataset,
+    a sample citation including the persistent identifier for the query, and a
+    machine actionable link for retrieving the result set that the query
+    returned at the time it was made.
+
+For more detailed guidance on accomplishing this, see the full text of the
+recommendations [@rauber.etal2015dce].
 
 \framed
 
