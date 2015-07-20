@@ -1091,6 +1091,8 @@ The following may also be of interest:
 
   * \fullcite{esrc2012dcw}[@esrc2012dcw]
 
+  * \fullcite{ezid2014cdc}[@ezid2014cdc]
+
   * \fullcite{lane2008dce}[@lane2008dce]
 
   * \fullcite{mayernik2013bdl}[@mayernik2013bdl]
