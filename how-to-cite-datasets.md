@@ -1089,6 +1089,8 @@ The following may also be of interest:
 
   * \fullcite{ands2011dca}[@ands2011dca]
 
+  * \fullcite{esrc2012dcw}[@esrc2012dcw]
+
   * \fullcite{lane2008dce}[@lane2008dce]
 
   * \fullcite{mayernik2013bdl}[@mayernik2013bdl]
@@ -1098,6 +1100,10 @@ The following may also be of interest:
   * \fullcite{page2009spt}[@page2009spt]
 
   * \fullcite{icpsr2011whs}[@icpsr2011whs]
+
+  * \fullcite{ukdsNDcd}[@ukdsNDcd]
+
+  * \fullcite{bristol2015cyr}[@bristol2015cyr]
 
   * \fullcite{wilkinson2011syw}[@wilkinson2011syw]
 
