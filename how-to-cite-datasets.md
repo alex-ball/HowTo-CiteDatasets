@@ -1091,6 +1091,8 @@ The following may also be of interest:
 
   * \fullcite{lane2008dce}[@lane2008dce]
 
+  * \fullcite{mayernik2013bdl}[@mayernik2013bdl]
+
   * \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
 
   * \fullcite{page2009spt}[@page2009spt]
