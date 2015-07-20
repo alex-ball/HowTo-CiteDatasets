@@ -911,6 +911,33 @@ RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011sh
 
 \endframed
 
+\bgroup\figure*[t]\shaded\small
+
+~~~ {.xml}
+<mixed-citation>
+  <name><surname>Mulvany</surname><given-names>Ian</given-names></name>,
+  <data-title>citing-dataset-elements</data-title>.
+  <source>FigShare</source>,
+  <date-in-citation content-type='pub-date' iso-8601-date='2014-06-30'>
+    <day>30</day><month>06</month><year>2014</year></date-in-citation>,
+  <pub-id pub-id-type='doi' xlink:href='http://dx.doi.org/10.6084/m9.figshare.1088363'
+    assigning-authority='figshare'>10.6084/m9.figshare.1088363</pub-id>.
+</mixed-citation>
+~~~
+
+\endshaded
+\caption{Example of using JATS to encode a data citation.}
+\label{fig:jats}
+
+\endfigure*\egroup
+
+On the publisher side, the Journal Article Tag Suite (JATS) is a NISO standard
+for representing journal articles as XML.^[Journal Article Tag Suite, URL: <http://jats.nlm.nih.gov/>.]
+It is based on the earlier National Library of Medicine (NLM) Archiving and Interchange Tag Suite.
+Following a proposal from the FORCE11 Data Citation Implementation Group,
+support for data citations was added to draft version 1.1d2 of JATS [@mietchen.etal2015ajs].
+An example using it to mark up a citation of a data record in FigShare
+is shown in [Figure 5](#fig:jats).
 
 ### Granularity {#sec:granularity}
 
