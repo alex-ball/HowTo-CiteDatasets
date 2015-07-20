@@ -549,7 +549,7 @@ Various organisations have shared their experiences of working with DataCite:
   * Australian Antarctic Division; Australian National University;
     Dryad [@andsNDdc].
   * ForestPlots.net, University of Leeds [@bl2015dcs].
-  * Griffith University [@simons2012idr].
+  * Griffith University [@simons.etal2013gis].
   * UK Data Archive [@jisc2012dih].
   * University of Bristol [@duke.gray2014ado].
 
@@ -1085,6 +1085,8 @@ Two other DCC guides cover this topic:
 \normalcolor
 The following may also be of interest:
 
+  * \fullcite{altman.crosas2013edc}[@altman.crosas2013edc]
+
   * \fullcite{andsNDdc}[@andsNDdc]
 
   * \fullcite{ands2011dca}[@ands2011dca]
@@ -1097,6 +1099,8 @@ The following may also be of interest:
 
   * \fullcite{mayernik2013bdl}[@mayernik2013bdl]
 
+  * \fullcite{mooney.newton2012adc}[@mooney.newton2012adc]
+
   * \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
 
   * \fullcite{page2009spt}[@page2009spt]
@@ -1106,6 +1110,8 @@ The following may also be of interest:
   * \fullcite{ukdsNDcd}[@ukdsNDcd]
 
   * \fullcite{bristol2015cyr}[@bristol2015cyr]
+
+  * \fullcite{walton.etal2012dcp}[@walton.etal2012dcp]
 
   * \fullcite{wilkinson2011syw}[@wilkinson2011syw]
 
