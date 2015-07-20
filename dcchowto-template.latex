@@ -75,13 +75,16 @@ $endfor$
 \printbibliography[category=notcited]
 $endif$
 
-\textbf{Please cite as:} \DCCHowtoAuthorAPA\ (\the\year). ‘\thetitle’. \emph{DCC How-to Guides}. Edinburgh: Digital Curation Centre. Available online: \url{http://www.dcc.ac.uk/resources/how-guides}
+\vspace{2\baselineskip plus 2\baselineskip minus 2\baselineskip}
+\noindent\begingroup\color{dccblue}
+The Digital Curation Centre (DCC) is a consortium of the Universities of Edinburgh, Glasgow and Bath,
+and receives funding from Jisc.
 
-\vfill
-\noindent\bfseries\begingroup\color{dccblue}
-Follow the DCC on Twitter: \href{http://twitter.com/#!/digitalcuration}{@digitalcuration}, \href{https://twitter.com/hashtag/ukdcc}{\#ukdcc}
+\vspace{2\baselineskip plus 2\baselineskip minus 2\baselineskip}
+\bfseries
+Follow the DCC on Twitter: \href{http://twitter.com/digitalcuration}{@digitalcuration}, \href{https://twitter.com/hashtag/ukdcc}{\#ukdcc}
 
-\vfill
+\vspace{2\baselineskip plus 2\baselineskip minus 2\baselineskip}
 \raggedleft\mdseries\footnotesize\theversion\par
 \endgroup
 $for(include-after)$
