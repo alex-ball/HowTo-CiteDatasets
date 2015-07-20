@@ -461,7 +461,7 @@ As with references to manuscripts that have not yet been published,
 authors should revisit references to unreleased data prior to publication to
 ensure the information is as up to date as possible.
 
-\framed
+\framed[breakable]
 
 ## Summary for researchers {#sec:summary-researchers}
 
@@ -473,7 +473,7 @@ ensure the information is as up to date as possible.
 
   * When citing a dataset in a paper, use the citation style required by the
     editor/publisher. If no form is suggested for datasets, take a standard
-    data citation style (e.g. DataCite’s^[‘Cite your data’, URL: <https://www.datacite.org/services/cite-your-data.html>.])
+    data citation style
     and adapt it to match the style for textual publications.
 
   * Give dataset identifiers in the form of a URL wherever possible, unless
@@ -634,7 +634,7 @@ For more information about tracking the impact of datasets, please see the DCC g
 ‘How to Track the Impact of Research Data with Metrics’ [@ball.duke2015hti].
 
 
-### Network tracking services {sec:network}
+### Network tracking services {#sec:network}
 
 The DLI (Data Literature Interlinking) Service is a result of a collaboration
 between the ICSU-WDS/RDA Data Publishing Services Working Group and the
@@ -818,13 +818,7 @@ Network using the open source software.^[Dataverse Network code repository, URL:
 <http://sourceforge.net/projects/dvn/>.]
 
 
-## Current implementation issues {#sec:implementation-issues}
-
-Two current issues for repositories are how to cater for both manual and
-automatic uses of citations, and how to deal with dynamic datasets.
-
-
-### Manual and automatic use of citations {#sec:robots}
+## Manual and automatic use of citations {#sec:robots}
 
 It is good practice for the URL in a data citation to lead to a *landing
 page* for the dataset, rather than to initiate a direct download. The
@@ -939,7 +933,8 @@ support for data citations was added to draft version 1.1d2 of JATS [@mietchen.e
 An example using it to mark up a citation of a data record in FigShare
 is shown in [Figure 5](#fig:jats).
 
-### Granularity {#sec:granularity}
+
+## Granularity {#sec:granularity}
 
 It is the responsibility of the repository to ensure that datasets are made
 citeable and identifiable at an appropriate level of granularity.
@@ -957,7 +952,7 @@ constituent parts should be recorded in the metadata for the collection and
 each part.
 
 
-### Versioning {#sec:versions}
+## Versioning {#sec:versions}
 
 One of the important features of the citation system is that a reader
 should be able to identify and retrieve the exact same resource that the
@@ -1023,7 +1018,7 @@ the WGDC recommends the following steps:
 For more detailed guidance on accomplishing this, see the full text of the
 recommendations [@rauber.etal2015dce].
 
-\framed
+\framed[breakable]
 
 ## Summary for data repositories {#sec:summary-repositories}
 
@@ -1074,11 +1069,11 @@ University) and Tom Pollard (BL) for helpful comments.
 \setlength{\parindent}{0pt}\nonzeroparskip\color{dccblue}\small
 Two other DCC guides cover this topic:
 
--   **Awareness Level:** [*Introduction to Curation: Data Citation and
+  * **Awareness Level:** [*Introduction to Curation: Data Citation and
     Linking*](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking)
     \(2011\) by Alex Ball and Monica Duke
 
--   **Awareness Level:** [*Introduction to Curation: Persistent
+  * **Awareness Level:** [*Introduction to Curation: Persistent
     Identifiers*](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/persistent-identifiers)
     \(2006\) by Joy Davidson
 
