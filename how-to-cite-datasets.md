@@ -852,25 +852,25 @@ an OAI-ORE Resource Map [@lagoze.etal2008oug].
 Clearly humans and software have different requirements for the dataset
 landing page. One way to satisfy both would be to embed the metadata
 intended for software tools as RDF within the human-readable Web page.
-This can be done using either RDFa as in [Figure 4](#fig:rdfa)
-[@adida.birbeck2008rp], or HTML5 microdata as in [Figure 5](#fig:html5)
-[@w3c2011hm].
+This can be done using RDFa Lite as in [Figure 4](#fig:rdfa)
+[@w3c2015rdfal].
 
-\bgroup\figure[ht]\shaded\small
-\input{fig-rdfa}
+\bgroup\figure[ht]\snugshade\small
 
-\endshaded
-\caption{Example of using RDFa to embed a link to a publication within a dataset's Web page}
+~~~ {.html}
+<body vocab="http://purl.org/spar/cito/"> ...
+<p resource="http://dx.doi.org/10.9876/data123">
+  Supplement to: Author, A. (2011). ...
+  <a href="http://dx.doi.org/10.123/paper45"
+  property="providesDataFor">doi:10.123/paper45
+  </a>
+</p> ...
+</body>
+~~~
+
+\endsnugshade
+\caption{Example of using RDFa Lite to embed a link to a publication within a dataset's Web page}
 \label{fig:rdfa}
-
-\endfigure\egroup
-
-\bgroup\figure[ht]\shaded\small
-\input{fig-html5}
-
-\endshaded
-\caption{Example of using HTML5 microdata to embed a link to a publication within a dataset's Web page}
-\label{fig:html5}
 
 \endfigure\egroup
 
