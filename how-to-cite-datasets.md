@@ -296,7 +296,7 @@ MLA
 Oxford
 
   : Cool, H. E. M. and Bell, M. (2011), *Excavations at St Peter's Church,
-    Barton-upon-Humber* \[data-set\] (York: Archaeology Data Service),
+    Barton-upon-Humber* \[dataset\] (York: Archaeology Data Service),
     doi: [10.5284/1000389](http://dx.doi.org/10.5284/1000389)
 
 \endshaded
