@@ -1105,8 +1105,6 @@ The following may also be of interest:
 
   * \fullcite{mooney.newton2012adc}[@mooney.newton2012adc]
 
-  * \fullcite{newton.etal2010ddc}[@newton.etal2010ddc]
-
   * \fullcite{page2009spt}[@page2009spt]
 
   * \fullcite{icpsr2011whs}[@icpsr2011whs]
