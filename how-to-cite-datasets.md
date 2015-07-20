@@ -461,6 +461,27 @@ As with references to manuscripts that have not yet been published,
 authors should revisit references to unreleased data prior to publication to
 ensure the information is as up to date as possible.
 
+
+## Citing physical data {#sec:physical}
+
+There is no difference in principle between how one should cite physical data,
+such as samples or materials, and digital data. The majority of issues that
+apply to physical data also apply to digital data that are too sensitive or
+voluminous to be transported over the Internet. In practice, the issue most
+likely to cause confusion is how and whether to provide a URL for the physical
+data.
+
+If the physical data has an identifier in a scheme with a resolver service, this
+should be used as the URL. For example, the International Geo Sample Number
+(IGSN) is associated with a catalogue whose records can be accessed by appending
+the number to the resolver service URL:
+`http://www.geosamples.org/profile?igsn=`.
+
+If the physical data has an identifier that cannot be resolved, it should be
+quoted elsewhere in the reference. The URL, meanwhile, should point to a page
+explaining how to gain access to the data, if applicable.
+
+
 \framed[breakable]
 
 ## Summary for researchers {#sec:summary-researchers}
