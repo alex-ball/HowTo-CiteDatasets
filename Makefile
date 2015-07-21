@@ -16,6 +16,7 @@ pdf: tmp $(BIB).bib dcchowto-apa.csl
 html: tmp $(BIB).bib dcchowto-apa.csl dcchowto-template.html
 	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\[([^\]]+)\]\{[^}]+\}\n\\label\{([^}]+)\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\{([^}]+)\}\n\\label\{([^}]+)\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's|<strong>Figure N:</strong>|<strong>Figure @{[++$$a]}:</strong>|ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\input\{([^}]+)\}@open+F,"$$1.html";join"",<F>@ige' $(NAME)-tmp.md
 	# The next 4 lines are peculiar to this document
 	perl -0777 -p -i -e 's@\\footref\{fn:altman.king\}@<a href="#fn7" class="footnoteRef"><sup>[7]</sup></a>@ig' $(NAME)-tmp.md
