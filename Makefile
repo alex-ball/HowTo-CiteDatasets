@@ -19,10 +19,10 @@ html: tmp $(BIB).bib dcchowto-apa.csl dcchowto-template.html
 	perl -0777 -p -i -e 's|<strong>Figure N:</strong>|<strong>Figure @{[++$$a]}:</strong>|ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\input\{([^}]+)\}@open+F,"$$1.html";join"",<F>@ige' $(NAME)-tmp.md
 	# The next 4 lines are peculiar to this document
-	perl -0777 -p -i -e 's@\\footref\{fn:altman.king\}@<a href="#fn7" class="footnoteRef"><sup>[7]</sup></a>@ig' $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\footref\{fn:lawrence.etal\}@<a href="#fn8" class="footnoteRef"><sup>[8]</sup></a>@ig' $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\footref\{fn:green\}@<a href="#fn9" class="footnoteRef"><sup>[9]</sup></a>@ig' $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\footref\{fn:starr.gastl\}@<a href="#fn10" class="footnoteRef"><sup>[10]</sup></a>@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\footref\{fn:altman.king\}@<a href="#fn10" class="footnoteRef"><sup>[10]</sup></a>@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\footref\{fn:lawrence.etal\}@<a href="#fn17" class="footnoteRef"><sup>[17]</sup></a>@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\footref\{fn:green\}@<a href="#fn18" class="footnoteRef"><sup>[18]</sup></a>@ig' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\footref\{fn:starr.gastl\}@<a href="#fn19" class="footnoteRef"><sup>[19]</sup></a>@ig' $(NAME)-tmp.md
 	pandoc -s -S --toc --toc-depth=2 --biblio $(BIB).bib --csl dcchowto-apa.csl --template=dcchowto-template -f markdown+markdown_in_html_blocks $(NAME)-tmp.md -o $(NAME).html
 	perl -0777 -p -i -e 's@<p></p>@@ig' $(NAME).html
 	perl -0777 -p -i -e 's@<h5 id="([^"]+)">(?:<a href="[^"]+">)?([^<]+)(?:</a>)?</h5>@<h6 id="\1">\2</h6>@ig' $(NAME).html
