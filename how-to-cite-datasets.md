@@ -345,7 +345,7 @@ Internet location. The scheme that is gaining most traction is
 the Digital Object Identifier (DOI).
 
 The DOI System is an identifier scheme administered by the International
-DOI Foundation.^[DOI System Website, URL: <http://www.doi.org/>.]
+DOI Foundation.^[DOI System, URL: <http://www.doi.org/>.]
 It is built on the Handle System but has its own
 conventions and an independent business model. The identifiers
 themselves have the standard Handle structure of prefix, slash, suffix
@@ -372,7 +372,9 @@ publishers prefer to print the bare DOI and embed the URL form as a hyperlink
 in digital versions.
 
 Individuals wishing to register a DOI for their dataset would normally do so
-via their data repository.
+via their disciplinary data archive, institutional data repository, or a data
+sharing service such as figshare^[Figshare, URL: <http://figshare.com/>.] or
+Synapse.^[Synapse, URL: <https://www.synapse.org/>.]
 
 
 ## Contributor identifiers {#sec:ids}
@@ -388,17 +390,17 @@ rather than attribution. There are however two schemes being developed
 specifically for attribution.
 
 The Open Researcher and Contributor Identifier (ORCID) is a scheme
-specifically aimed at academic authors.^[ORCID Website,
+specifically aimed at academic authors.^[ORCID,
 URL: <http://orcid.org/>.] It has gained support from over 300 organisations,
 including major academic publishers, and been integrated into numerous research systems.
 Researchers can associate with their ORCID profiles a list of works to which
 they have contributed, as well as grants received and their educational and
 employment history. ORCID profiles can also be linked
 to identifiers and profiles from other schemes such as Thomson Reuters’
-ResearcherID,^[ResearcherID Website, URL: <http://www.researcherid.com/>.
-] Scopus,^[Scopus Website, URL: <http://www.scopus.com/>.] Scholar
+ResearcherID,^[ResearcherID, URL: <http://www.researcherid.com/>.
+] Scopus,^[Scopus, URL: <http://www.scopus.com/>.] Scholar
 Universe,^[Scholar Universe, URL: <http://www.scholaruniverse.com/>.] and
-RePEc.^[RePEc Author Service Website, URL: <http://authors.repec.org/>.]
+RePEc.^[RePEc Author Service, URL: <http://authors.repec.org/>.]
 
 The International Standard Name Identifier (ISNI) scheme is an ISO
 standard for registering ‘Public Identities’: people, pseudonyms,
@@ -535,8 +537,8 @@ to support data citation.
 
 The task of managing DOI registers is delegated to registration agencies
 that each specialise in a type of resource.
-For research datasets, the registration agency is the DataCite Consortium.^[DataCite
-Website, URL: <http://www.datacite.org/>.]
+For research datasets, the registration agency is the DataCite Consortium.^[DataCite,
+URL: <http://www.datacite.org/>.]
 The consortium is made up of libraries and data centres from across the globe,
 led by the German National Library of Science and Technology (TIB).
 Among the services it provides are human and machine interfaces
@@ -550,7 +552,7 @@ OAI-PMH service, URL: <http://oai.datacite.org/>.]
 Any repository wishing to register DOIs needs to obtain a username and password
 from DataCite to gain access to the registration service.
 Alternatively, the organisation can manage its DOIs through a third-party service
-such as EZID.^[EZID Website, URL: <http://ezid.cdlib.org/>.]
+such as EZID.^[EZID, URL: <http://ezid.cdlib.org/>.]
 The username and password are not needed for the metadata search or OAI-PMH services.
 
 While best practice has yet to emerge on some matters, certain conventions are
@@ -605,9 +607,9 @@ electronic notebooks and scientific publishers.^[Webtracks Project blog, URL:
 \noindent{}**Example**
 
 \smallskip\noindent
-Knowledge Blog^[Knowledge Blog Website, URL: <http://knowledgeblog.org/>]
-is an alternative scholarly publication platform based on WordPress^[WordPress
-Website, URL: <http://wordpress.org/>] blogging software. It makes heavy use of linkbacks,
+Knowledge Blog^[Knowledge Blog, URL: <http://knowledgeblog.org/>.]
+is an alternative scholarly publication platform based on WordPress^[WordPress,
+URL: <https://wordpress.org/>.] blogging software. It makes heavy use of linkbacks,
 for example as the mechanism for linking an article with its reviews,
 and could therefore be used together with the Citation Notification
 Service to provide bi-directional links to datasets. Its KCite plugin
@@ -620,7 +622,7 @@ to work with DataCite DOIs.
 
 The US-based SHARE initiative is implementing a different notification system that,
 while not directly related to citation, may assist with setting up links between
-systems.^[SHARE initiative Website, URL: <http://www.share-research.org/>.]
+systems.^[SHARE initiative, URL: <http://www.share-research.org/>.]
 The SHARE Notify service collects metadata from publishers and repositories
 about events such as data or pre-prints being deposited, or papers being published.
 This metadata is indexed in a database and made available through JSON and Atom feeds.
@@ -639,7 +641,7 @@ datasets are referenced in the literature.
 Nevertheless there are some services available that index these references.
 
 The Thomson Reuters Data Citation Index was launched in October 2012.^[Thomson Reuters
-Data Citation Index product page, URL: <http://wokinfo.com/products_tools/multidisciplinary/dci/>]
+Data Citation Index product page, URL: <http://wokinfo.com/products_tools/multidisciplinary/dci/>.]
 It tracks citations and less structured references to data at four levels of granularity:
 nanopublications (see below), datasets, research studies, and data repositories.
 It relies not only on access to the full text of publications but also an index
@@ -706,7 +708,7 @@ refer. Nanopublications are therefore best suited to disciplines which
 are already well supported by RDF-friendly ontologies. For concepts and
 entities that do not sit easily within a formal ontology, a more relaxed
 approach such as that provided by the Concept Wiki can be used.^[Concept
-Wiki Website, URL: <http://www.conceptwiki.org/>.]
+Wiki, URL: <http://www.conceptwiki.org/>.]
 
 
 ### Citation Typing Ontology {#sec:cito}
@@ -750,7 +752,7 @@ provided by each of them can be found in [Figure 2](#fig:repo-cites) above.
 
 PANGAEA (Data Publisher for Earth and Environmental Science) is hosted
 by the Alfred Wegener Institute for Polar and Marine Research and the
-Center for Marine Environmental Sciences in Germany.^[PANGAEA Website,
+Center for Marine Environmental Sciences in Germany.^[PANGAEA,
 URL: <http://www.pangaea.de/>.] It is the data
 archive and distribution system for the World Data Centre for Marine
 Environmental Sciences (WDC-MARE) and the designated archive for the
@@ -773,7 +775,7 @@ the data are published and assigned a DOI. Once this has happened, the
 metadata and data are both considered static.
 
 The middleware component of PANGAEA, panFMP, has been released as open
-source software.^[PANGAEA Framework for Metadata Portals Website, URL:
+source software.^[PANGAEA Framework for Metadata Portals, URL:
 <http://www.panfmp.org/>.] Some of the associated visualisation and
 conversion tools have been made available as freeware.^[PANGAEA Software
 Web page, URL: <http://www.pangaea.de/software/>.]
@@ -783,7 +785,7 @@ Web page, URL: <http://www.pangaea.de/software/>.]
 
 Dryad is a data repository specialising in evolutionary biology and
 ecology, developed by the National Evolutionary Synthesis Center and the
-University of North Carolina Metadata Research Center.^[Dryad Website, URL:
+University of North Carolina Metadata Research Center.^[Dryad, URL:
 <http://datadryad.org/>.] It is a
 preferred data archive for several journals including *The American
 Naturalist*, *Molecular Ecology*, *Molecular Biology and Evolution*,
@@ -802,7 +804,7 @@ catalogue record goes live in the repository. The record is updated with
 the citation of the data collection paper once it is published
 [@feinstein2010wha].
 
-Dryad is based on the DSpace digital repository;^[DSpace Website, URL:
+Dryad is based on the DSpace digital repository;^[DSpace, URL:
 <http://www.dspace.org/>.] the Dryad extensions have been released as open
 source software.^[Dryad code repository, URL: <http://dryad.googlecode.com/>.]
 
@@ -810,7 +812,7 @@ source software.^[Dryad code repository, URL: <http://dryad.googlecode.com/>.]
 ### Dataverse {#sec:dataverse}
 
 The Dataverse Network is a software application for building data
-repositories called dataverses.^[Dataverse Network Project Website, URL:
+repositories called dataverses.^[Dataverse Network Project, URL:
 <http://thedata.org/>.] It is developed by a community led
 by the Institute for Quantitative Social Science (IQSS) at Harvard
 University. As well as the original Dataverse Network at IQSS, there are
@@ -833,7 +835,7 @@ data collection paper alongside a sample citation for the data.
 
 Authors are welcome to upload data to the Henry A. Murray Research
 Archive at Harvard, or create their own dataverses in the IQSS Dataverse
-Network.^[Henry A. Murray Research Archive Website, URL: <http://www.murray.harvard.edu/>.]
+Network.^[Henry A. Murray Research Archive, URL: <http://www.murray.harvard.edu/>.]
 Alternatively, institutions can set up their own Dataverse
 Network using the open source software.^[Dataverse Network code repository, URL:
 <http://sourceforge.net/projects/dvn/>.]
@@ -859,7 +861,7 @@ with an unsuitable licence, to download supporting documentation or
 data, or to select individual files or other subsets of the data. Such
 use cases require that the URL actually returns the machine-readable
 equivalent of a landing page. The technique used by the ACRID
-Project,^[ACRID Project Website, URL:
+Project,^[ACRID Project, URL:
 <http://www.cru.uea.ac.uk/cru/projects/acrid/>.] for example, is to provide
 an index of the data and metadata associated with a workflow in the form of
 an OAI-ORE Resource Map [@lagoze.etal2008oug].
@@ -911,7 +913,7 @@ software tools.
 \smallskip
 \noindent{}*Acta Crystallographica Section E* (*Acta Cryst E*) is an online,
 open access data journal published by the International Union of
-Crystallographers.^[Acta Cryst E Website, URL: <http://journals.iucr.org/e/journalhomepage.html>]
+Crystallographers.^[Acta Cryst E, URL: <http://journals.iucr.org/e/journalhomepage.html>.]
 It operates a workflow whereby data are submitted by
 authors at the same time as the data collection paper. The data are
 checked automatically for validity, and the validation report passed to
@@ -919,12 +921,20 @@ reviewers. On publication, the data are made available for download from
 the page for the paper.
 
 The XYZ Project has developed additional tools to support workflows like
-these.^[XYZ Project blog, URL: <http://projectxyz.wordpress.com/>]
+these.^[XYZ Project blog, URL: <https://projectxyz.wordpress.com/>.]
 It also explored, with *Acta Cryst E*, the possibility of
 embedding data directly within the Web pages of journal papers, using
 RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011shc].
 
 \endframed
+
+On the publisher side, the Journal Article Tag Suite (JATS) is a NISO standard
+for representing journal articles as XML.^[Journal Article Tag Suite, URL: <http://jats.nlm.nih.gov/>.]
+It is based on the earlier National Library of Medicine (NLM) Archiving and Interchange Tag Suite.
+Following a proposal from the FORCE11 Data Citation Implementation Group,
+support for data citations was added to draft version 1.1d2 of JATS [@mietchen.etal2015ajs].
+An example using it to mark up a citation of a data record in FigShare
+is shown in [Figure 5](#fig:jats).
 
 \bgroup\figure*[t]\shaded\small
 
@@ -945,14 +955,6 @@ RDF and microformats in a profile of HTML known as Scholarly HTML [@sefton2011sh
 \label{fig:jats}
 
 \endfigure*\egroup
-
-On the publisher side, the Journal Article Tag Suite (JATS) is a NISO standard
-for representing journal articles as XML.^[Journal Article Tag Suite, URL: <http://jats.nlm.nih.gov/>.]
-It is based on the earlier National Library of Medicine (NLM) Archiving and Interchange Tag Suite.
-Following a proposal from the FORCE11 Data Citation Implementation Group,
-support for data citations was added to draft version 1.1d2 of JATS [@mietchen.etal2015ajs].
-An example using it to mark up a citation of a data record in FigShare
-is shown in [Figure 5](#fig:jats).
 
 
 ## Granularity {#sec:granularity}
@@ -1069,9 +1071,9 @@ which you are aware that cite the dataset. This may require
 collaboration with authors and publishers.
 
 * For more information about registering DOIs for datasets, contact your
-local DataCite member.^[List of DataCite members, URL: <http://datacite.org/members>]
+local DataCite member.^[List of DataCite members, URL: <https://www.datacite.org/about-datacite/members>.]
 For more information about registering Archival Resource Keys,^[Archival
-Resource Keys Website, URL: <https://confluence.ucop.edu/display/Curation/ARK>]
+Resource Keys, URL: <https://confluence.ucop.edu/display/Curation/ARK>.]
 contact the California Digital Library.
 
 \endframed
@@ -1088,7 +1090,7 @@ University) and Tom Pollard (BL) for helpful comments.
 # Further information {#sec:further-information}
 
 \setlength{\parindent}{0pt}\nonzeroparskip\color{dccblue}\small
-Two other DCC guides cover this topic:
+Three other DCC guides cover this topic:
 
   * **Awareness Level:** [*Introduction to Curation: Data Citation and
     Linking*](http://www.dcc.ac.uk/resources/briefing-papers/introduction-curation/data-citation-and-linking)

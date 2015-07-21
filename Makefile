@@ -1,7 +1,7 @@
 NAME  = how-to-cite-datasets
 BIB   = cite-datasets
 SHELL = bash
-all: pdf html clean
+all: html dtp clean
 	exit 0
 tmp: $(NAME).md
 	cp $(NAME).md $(NAME)-tmp.md
@@ -14,15 +14,15 @@ pdf: tmp $(BIB).bib dcchowto-apa.csl
 	perl -0777 -p -i -e 's@\\endfigure\*\\egroup@\\end{figure*}@ig' $(NAME)-tmp.md
 	pandoc -s -S --latex-engine=lualatex --biblio $(BIB).bib --csl dcchowto-apa.csl -N -V fontsize=11pt -V papersize=a4paper -V lang=british -V geometry:hmargin=3cm -V geometry:vmargin=2.5cm -V mainfont=Charis\ SIL -V monofont=DejaVu\ Sans\ Mono -V documentclass=memoir -V classoption="article,oneside" -V header-includes="\usepackage[svgnames]{xcolor}\colorlet{dccblue}{Blue}\colorlet{dccmaroon}{Crimson}\colorlet{dccpeach}{AntiqueWhite}\colorlet{shadecolor}{AntiqueWhite}\let\fullcite=\textbf" $(NAME)-tmp.md -o $(NAME)-preview.pdf
 html: tmp $(BIB).bib dcchowto-apa.csl dcchowto-template.html
-	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\[([^\]]+)\]\{[^}]+\}\n\\label\{[^}]+\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
-	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\{([^}]+)\}\n\\label\{[^}]+\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\[([^\]]+)\]\{[^}]+\}\n\\label\{([^}]+)\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
+	perl -0777 -p -i -e 's@\\bgroup\\figure\*?(?:\[[^\]]+\])?(.*?)\\caption\{([^}]+)\}\n\\label\{([^}]+)\}\n\n\\endfigure\*?\\egroup@<div class="div_highlight" style="border-radius:8px;" id="\3">\1<p style="text-align:center;"><strong>Figure N:</strong> \2</p>\n\n</div>@igms' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\input\{([^}]+)\}@open+F,"$$1.html";join"",<F>@ige' $(NAME)-tmp.md
 	# The next 4 lines are peculiar to this document
 	perl -0777 -p -i -e 's@\\footref\{fn:altman.king\}@<a href="#fn7" class="footnoteRef"><sup>[7]</sup></a>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\footref\{fn:lawrence.etal\}@<a href="#fn8" class="footnoteRef"><sup>[8]</sup></a>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\footref\{fn:green\}@<a href="#fn9" class="footnoteRef"><sup>[9]</sup></a>@ig' $(NAME)-tmp.md
 	perl -0777 -p -i -e 's@\\footref\{fn:starr.gastl\}@<a href="#fn10" class="footnoteRef"><sup>[10]</sup></a>@ig' $(NAME)-tmp.md
-	pandoc -s -S --toc --toc-depth=1 --biblio $(BIB).bib --csl dcchowto-apa.csl --template=dcchowto-template $(NAME)-tmp.md -o $(NAME).html
+	pandoc -s -S --toc --toc-depth=2 --biblio $(BIB).bib --csl dcchowto-apa.csl --template=dcchowto-template -f markdown+markdown_in_html_blocks $(NAME)-tmp.md -o $(NAME).html
 	perl -0777 -p -i -e 's@<p></p>@@ig' $(NAME).html
 	perl -0777 -p -i -e 's@<h5 id="([^"]+)">(?:<a href="[^"]+">)?([^<]+)(?:</a>)?</h5>@<h6 id="\1">\2</h6>@ig' $(NAME).html
 	perl -0777 -p -i -e 's@<h4 id="([^"]+)">(?:<a href="[^"]+">)?([^<]+)(?:</a>)?</h4>@<h5 id="\1">\2</h5>@ig' $(NAME).html
