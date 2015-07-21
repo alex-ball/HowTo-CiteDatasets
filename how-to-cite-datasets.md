@@ -960,7 +960,7 @@ is shown in [Figure 5](#fig:jats).
 ## Granularity {#sec:granularity}
 
 It is the responsibility of the repository to ensure that datasets are made
-citeable and identifiable at an appropriate level of granularity.
+citable and identifiable at an appropriate level of granularity.
 There are no hard and fast rules for this, as much depends on custom and practice
 within the discipline. As a rule of thumb, however, it is recommended that
 repositories assign identifiers at the finest level of granularity at which the
