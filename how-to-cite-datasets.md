@@ -66,14 +66,18 @@ transparency with which science advances.
 
 # Principles of data citation {#sec:requirements}
 
-FORCE11, an international community of individuals and organisations
-interested in improving the scholarly communication process,
+The FORCE11 Data Citation Synthesis Group –
+whose members include representatives of the Research Data Alliance,
+the ICSU World Data System, and a range of projects^[FORCE11 Data Citation
+Synthesis Group, URL: <https://www.force11.org/datacitation/workinggroup>.] –
 has published a set of data citation principles.[@fdcsg2014jdd]
 The principles build on earlier work in this area, most notably by
 CODATA,[@codata2013ooc]
 the (US) National Academies of Sciences, Engineering, and Medicine,[@uhlir2012fad]
 the DCC,[@ball.duke2012dcl]
-and the Institute for Quantitative Social Science, Harvard University.[@altman.king2007pss]
+and the Institute for Quantitative Social Science, Harvard University,[@altman.king2007pss]
+and have been widely endorsed.^[‘Endorse the data citation principles’, URL:
+<https://www.force11.org/datacitation/endorsements>.]
 
 \framed[breakable]
 
@@ -467,8 +471,9 @@ ensure the information is as up to date as possible.
 ## Citing physical data {#sec:physical}
 
 There is no difference in principle between how one should cite physical data,
-such as samples or materials, and digital data. The majority of issues that
-apply to physical data also apply to digital data that are too sensitive or
+such as samples or materials, and digital data. Physical data is often less
+reproducible or shareable than digital data, but the majority of issues that
+apply to it also apply to digital data that are too sensitive or
 voluminous to be transported over the Internet. In practice, the issue most
 likely to cause confusion is how and whether to provide a URL for the physical
 data.
@@ -607,16 +612,15 @@ electronic notebooks and scientific publishers.^[Webtracks Project blog, URL:
 \noindent{}**Example**
 
 \smallskip\noindent
-Knowledge Blog^[Knowledge Blog, URL: <http://knowledgeblog.org/>.]
-is an alternative scholarly publication platform based on WordPress^[WordPress,
+Knowledge Blog^[Knowledge Blog, URL: <http://knowledgeblog.org/>.] was developed
+as an alternative scholarly publication platform based on WordPress^[WordPress,
 URL: <https://wordpress.org/>.] blogging software. It makes heavy use of linkbacks,
 for example as the mechanism for linking an article with its reviews,
 and could therefore be used together with the Citation Notification
 Service to provide bi-directional links to datasets. Its KCite plugin
 allows for the automatic generation of citations from just a DOI (using
-the metadata lookup API from the CrossRef registration agency) or a
-PubMed identifier,[@lord.etal2011okb] though this has not yet been extended
-to work with DataCite DOIs.
+the metadata lookup API from the CrossRef and DataCite registration agencies) or a
+PubMed identifier.^[KCite WordPress plugin, URL: <https://wordpress.org/plugins/kcite/>.]
 
 \endframed
 
@@ -1084,7 +1088,9 @@ contact the California Digital Library.
 Thank you to Sarah Callaghan (STFC), Shirley Crompton (STFC), Michael
 Diepenbroek (WDC-MARE), Margaret Henty (ANDS), Catherine Jones (STFC),
 Sarah Jones (DCC), Florance Kennedy (DCC), Phillip Lord (Newcastle
-University) and Tom Pollard (BL) for helpful comments.
+University), and Tom Pollard (BL) for helpful comments
+on the first version of this guide,
+and to DCC colleagues for their comments on subsequent versions.
 
 
 # Further information {#sec:further-information}
