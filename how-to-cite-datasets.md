@@ -979,7 +979,7 @@ constituent parts should be recorded in the metadata for the collection and
 each part.
 
 
-## Versioning {#sec:versions}
+## Versioning and dynamic data {#sec:versions}
 
 One of the important features of the citation system is that a reader
 should be able to identify and retrieve the exact same resource that the
