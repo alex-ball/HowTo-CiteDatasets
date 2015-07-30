@@ -14,7 +14,7 @@ There are two main branches in use:
 * **master** is used for releases. Versions for review and quality assurance are tagged r1, r2, r3 and so on, while published versions are tagged v2, v3, v4 and so on. (The numbers in the two sequences are not intended to correspond.)
 * **draft** is the working branch where the document is revised between releases.
 
-Note that [Version 1 (2011-10-18)](http://www.dcc.ac.uk/webfm_send/865) and [Version 2 (2012-06-20)](http://www.dcc.ac.uk/webfm_send/525) were written using a different system and therefore their history is not recorded in this repository.
+Note that [Version 1 (2011-10-18)](http://www.dcc.ac.uk/webfm_send/865) and [Version 2 (2012-06-20)](http://www.dcc.ac.uk/webfm_send/2032) were written using a different system and therefore their history is not recorded in this repository.
 
 Authoring convention
 --------------------
