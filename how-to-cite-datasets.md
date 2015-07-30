@@ -175,8 +175,7 @@ Where no specific advice is given, it is usually recommended that authors put
 the statement in the acknowledgements section; this is because, as with the
 acknowledgement of the grant, the statement is often a condition of funding and
 locating the two together simplifies the task of checking compliance [@rin2008afs].
-
-More detailed guidance on data access statements may be given by your institution.^[See,
+More detailed guidance on data access statements is given by some institutions.^[See,
 for example, guidance given by the universities of Bath
 (<http://www.bath.ac.uk/research/data/sharing-reuse/data-access-statement.html>)
 and Bristol (<http://data.bris.ac.uk/research/using-data/>).]
@@ -428,7 +427,7 @@ With print publications, the issue of citing at different levels of
 granularity is relatively straightforward. The documents listed within a
 bibliography or reference list represent intellectual wholes:
 single-author monographs are referenced as whole books, but with journal
-issues, conference proceedings and edited collections the relevant
+issues, conference proceedings and edited collections, the relevant
 papers are referenced individually. More granular references (to
 sections, pages, etc.) are made at the point of citation in the text,
 rather than in the reference list.
@@ -454,7 +453,7 @@ additional information needed.
 ## Citing unreleased data {#sec:unreleased}
 
 If citing a dataset that is not yet released, the rule of thumb is to provide
-in the reference as much information about it as is already known. At the least
+in the reference as much information about it as is already known. At a miniumum,
 this should include the creator and title of the dataset. If the dataset has not
 yet been deposited, the date of collection should be included. If the dataset
 has been deposited but an online record is not yet available, the date can be
@@ -494,7 +493,7 @@ explaining how to gain access to the data, if applicable.
 ## Summary for researchers {#sec:summary-researchers}
 
   * If you have generated/collected data to be used as evidence in an
-    academic publication, you should deposit them with a suitable data
+    academic publication, you should deposit it with a suitable data
     archive or repository as soon as you are able. If they do not provide
     you with a persistent identifier or URL for your data, encourage them to
     do so.
@@ -573,12 +572,12 @@ already becoming established.
 
 Various organisations have shared their experiences of working with DataCite:
 
-  * Archaeology Data Service; University of Southampton [@bl2013wwb].
+  * Archaeology Data Service; University of Southampton [@bl2013wwb];
   * Australian Antarctic Division; Australian National University;
-    Dryad [@andsNDdc].
-  * ForestPlots.net, University of Leeds [@bl2015dcs].
-  * Griffith University [@simons.etal2013gis].
-  * UK Data Archive [@jisc2012dih].
+    Dryad [@andsNDdc];
+  * ForestPlots.net, University of Leeds [@bl2015dcs];
+  * Griffith University [@simons.etal2013gis];
+  * UK Data Archive [@jisc2012dih];
   * University of Bristol [@duke.gray2014ado].
 
 
@@ -630,8 +629,8 @@ systems.^[SHARE initiative, URL: <http://www.share-research.org/>.]
 The SHARE Notify service collects metadata from publishers and repositories
 about events such as data or pre-prints being deposited, or papers being published.
 This metadata is indexed in a database and made available through JSON and Atom feeds.
-If repository is aware that a manuscript related to a dataset it holds is about
-to be published, it could monitor to feeds to discover when publication occurs.
+If a repository is aware that a manuscript related to a dataset it holds is about
+to be published, it could monitor the feeds to discover when publication occurs.
 Similarly, by contributing to the SHARE Notify service, the repository could
 enable a publisher to discover when the dataset underlying a manuscript has been released.
 
@@ -640,7 +639,7 @@ enable a publisher to discover when the dataset underlying a manuscript has been
 
 One of the benefits of using formal data citations is that it should make it
 easier to assemble evidence that a dataset has had impact.
-As of mid-2015 it is quite hard to do this due the variety of ways in which
+As of mid-2015 it is quite hard to do this due to the variety of ways in which
 datasets are referenced in the literature.
 Nevertheless there are some services available that index these references.
 
@@ -648,7 +647,7 @@ The Thomson Reuters Data Citation Index was launched in October 2012.^[Thomson R
 Data Citation Index product page, URL: <http://wokinfo.com/products_tools/multidisciplinary/dci/>.]
 It tracks citations and less structured references to data at four levels of granularity:
 nanopublications (see below), datasets, research studies, and data repositories.
-It relies not only on access to the full text of publications but also an index
+It relies not only on access to the full text of publications but also on an index
 of available datasets, the information for which is drawn from data repositories,
 data discovery services and DataCite.
 
@@ -758,7 +757,7 @@ PANGAEA (Data Publisher for Earth and Environmental Science) is hosted
 by the Alfred Wegener Institute for Polar and Marine Research and the
 Center for Marine Environmental Sciences in Germany.^[PANGAEA,
 URL: <http://www.pangaea.de/>.] It is the data
-archive and distribution system for the World Data Centre for Marine
+archive and distribution system for the World Data Center for Marine
 Environmental Sciences (WDC-MARE) and the designated archive for the
 data publishing journal *Earth System Science Data*.
 
@@ -859,7 +858,7 @@ direct access and those available through mediated access.
 
 Since for the most part data are processed by software, it can help to
 accelerate progress if software tools are also able to retrieve data by
-means of the same URL. Software tools, like human readers, may wish to
+means of the same URL. Software tools, like human readers, may need to
 be selective with regard to versions and representations, to avoid data
 with an unsuitable licence, to download supporting documentation or
 data, or to select individual files or other subsets of the data. Such
@@ -922,7 +921,7 @@ It operates a workflow whereby data are submitted by
 authors at the same time as the data collection paper. The data are
 checked automatically for validity, and the validation report passed to
 reviewers. On publication, the data are made available for download from
-the page for the paper.
+the Web page for the paper.
 
 The XYZ Project has developed additional tools to support workflows like
 these.^[XYZ Project blog, URL: <https://projectxyz.wordpress.com/>.]
@@ -976,7 +975,7 @@ wish to assign identifiers for collections. In this case, the collection should
 also represent an intellectual whole, such as the data collected by a particular
 study or activity. The hierarchical relationships between the collection and its
 constituent parts should be recorded in the metadata for the collection and
-each part.
+for each part.
 
 
 ## Versioning and dynamic data {#sec:versions}
@@ -1000,7 +999,7 @@ datasets, and it is a slightly different problem depending on whether
 the dataset is frequently *revised*, that is, data points are
 continually improved or updated, or frequently *expanded*, such as
 sensor data maintained as a time series. Either way, to keep the
-versions manageable repositories can present versions in three ways:
+versions manageable, repositories can present versions in three ways:
 time slices, full snapshots and partial snapshots.
 
 With the *time slice* approach, the citable entity is the set of updates made to
@@ -1011,7 +1010,7 @@ data for a given year).
 
 With the *full snapshot* approach, at regular intervals or at the request of a
 citing author, a snapshot is taken of the entire dataset and made citable. This
-is a better solution for revised datasets, as after retrieving the data the
+is a better solution for revised datasets, as after retrieving the data, the
 reader or author need not perform any additional operations to arrive at the
 required data. It is also better for expanding datasets where authors are
 concerned with the whole time series.
@@ -1056,7 +1055,7 @@ This URL should belong to a landing page that contains descriptive
 information about the dataset, as well as links or instructions for
 accessing it.
 
-* Once an identifier has been assigned to a (version/snapshot of) a
+* Once an identifier has been assigned to (a version/snapshot of) a
 dataset, ensure that it and any explanatory metadata remain static over
 time. Ensure that the identifiers remain unique and associated with the
 correct versions.
