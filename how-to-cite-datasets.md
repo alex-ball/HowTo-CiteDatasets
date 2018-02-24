@@ -278,29 +278,29 @@ APA
 
   : Cool, H. E. M., & Bell, M. (2011). *Excavations at St Peter's Church,
     Barton-upon-Humber* \[Data set\].
-    [doi:10.5284/1000389](http://dx.doi.org/10.5284/1000389)
+    [doi:10.5284/1000389](https://doi.org/10.5284/1000389)
 
 Chicago
 
   : *(Footnote)* H. E. M. Cool and Mark Bell, Excavations at St Peter's Church,
     Barton-upon-Humber (accessed May 1, 2011),
-    [doi:10.5284/1000389](http://dx.doi.org/10.5284/1000389).
+    [doi:10.5284/1000389](https://doi.org/10.5284/1000389).
 
     *(Bibliography)* Cool, H. E. M., and Mark Bell. Excavations at St Peter's Church,
     Barton-upon-Humber (accessed May 1, 2011).
-    [doi:10.5284/1000389](http://dx.doi.org/10.5284/1000389).
+    [doi:10.5284/1000389](https://doi.org/10.5284/1000389).
 
 MLA
 
   : Cool, H. E. M., and Mark Bell. "Excavations at St Peter's Church,
     Barton-upon-Humber." Archaeology Data Service, 2001. Web. 1 May 2011.
-    `<`<http://dx.doi.org/10.5284/1000389>`>`.
+    `<`<https://doi.org/10.5284/1000389>`>`.
 
 Oxford
 
   : Cool, H. E. M. and Bell, M. (2011), *Excavations at St Peter's Church,
     Barton-upon-Humber* \[dataset\] (York: Archaeology Data Service),
-    doi: [10.5284/1000389](http://dx.doi.org/10.5284/1000389)
+    doi: [10.5284/1000389](https://doi.org/10.5284/1000389)
 
 \endshaded
 
@@ -315,14 +315,14 @@ PANGAEA
 
   : Willmes, S et al. (2009): Onset dates of annual snowmelt on Antarctic
     sea ice in 2007/2008.
-    [doi:10.1594/PANGAEA.701380](http://dx.doi.org/10.1594/PANGAEA.701380)
+    [doi:10.1594/PANGAEA.701380](https://doi.org/10.1594/PANGAEA.701380)
 
 Dryad
 
   : Kingsolver JG, Hoekstra HE, Hoekstra JM, Berrigan D, Vignieri SN,
     Hill CE, Hoang A, Gibert P, Beerli P (2001) Data from: The strength of
     phenotypic selection in natural populations. Dryad Digital Repository.
-    [doi:10.5061/dryad.166](http://dx.doi.org/10.5061/dryad.166)
+    [doi:10.5061/dryad.166](https://doi.org/10.5061/dryad.166)
 
 Dataverse
 
@@ -368,7 +368,7 @@ in a DOI have no special significance.
 While there are several services available that can resolve a DOI to an
 Internet location,^[Some publishers provide resolvers for their own DOIs, while
 the Handle resolver <http://hdl.handle.net/> can be used for any DOI.] the
-preferred one is <http://dx.doi.org/>. Appending a DOI to this URL creates a
+preferred one is <https://doi.org/>. Appending a DOI to this URL creates a
 further URL that can be used to access the associated resource. Authors are
 encouraged to use the URL version of the DOI wherever possible, though some
 publishers prefer to print the bare DOI and embed the URL form as a hyperlink
@@ -879,9 +879,9 @@ This can be done using RDFa Lite as in [Figure 4](#fig:rdfa)
 
 ~~~ {.html}
 <body vocab="http://purl.org/spar/cito/"> ...
-<p resource="http://dx.doi.org/10.9876/data123">
+<p resource="https://doi.org/10.9876/data123">
   Supplement to: Author, A. (2011). ...
-  <a href="http://dx.doi.org/10.123/paper45"
+  <a href="https://doi.org/10.123/paper45"
   property="providesDataFor">doi:10.123/paper45
   </a>
 </p> ...
@@ -948,7 +948,7 @@ is shown in [Figure 5](#fig:jats).
   <source>FigShare</source>,
   <date-in-citation content-type='pub-date' iso-8601-date='2014-06-30'>
     <day>30</day><month>06</month><year>2014</year></date-in-citation>,
-  <pub-id pub-id-type='doi' xlink:href='http://dx.doi.org/10.6084/m9.figshare.1088363'
+  <pub-id pub-id-type='doi' xlink:href='https://doi.org/10.6084/m9.figshare.1088363'
     assigning-authority='figshare'>10.6084/m9.figshare.1088363</pub-id>.
 </mixed-citation>
 ~~~
